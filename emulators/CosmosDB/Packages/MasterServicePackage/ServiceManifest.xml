@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceManifest
+  
+  Name="MasterServicePackage"
+  Version="#(REPLACE_ApplicationCodeConfigVersion)" 
+  
+  xsi:schemaLocation="http://schemas.microsoft.com/2011/01/fabric WinFabServiceModel.xsd"
+  xmlns="http://schemas.microsoft.com/2011/01/fabric"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Description>Service that implements the DocDB Master Service functionality in a single service</Description>
+  <ServiceTypes>
+    <StatefulServiceType ServiceTypeName="MasterService" HasPersistedState="true" />
+  </ServiceTypes>
+  <CodePackage Name="ProcessWatchdog.Code" Version="#(REPLACE_ApplicationCodeVersion)">
+    <EntryPoint>
+      <ExeHost>
+        <Program>DocumentDB.ProcessWatchdog.exe</Program>
+      </ExeHost>
+    </EntryPoint>    
+  </CodePackage>
+  <CodePackage Name="MasterService.Code" Version="#(REPLACE_ApplicationCodeVersion)">
+    <SetupEntryPoint>
+      <ExeHost>
+        <Program>DocumentDB.SetupEntryPoint.exe</Program>
+        <!-- MUST be in sync with DocDbSetupEntryPoint -->
+        <Arguments>"Master"</Arguments>
+      </ExeHost>
+    </SetupEntryPoint>
+    <EntryPoint>
+      <ExeHost>
+        <Program>DocumentDB.Master.exe</Program>
+      </ExeHost>
+    </EntryPoint>
+  </CodePackage>
+  <ConfigPackage Name="MasterService.Config" Version="#(REPLACE_ApplicationConfigVersion)" />
+  <Resources>
+    <Endpoints>
+      <Endpoint Name="Watchdog_ServiceHost_Tcp" Protocol="tcp" />
+      <Endpoint Name="App_DocDBServer0" Protocol="tcp" />
+      <Endpoint Name="App_DocDBServer1" Protocol="tcp" />
+      <Endpoint Name="App_DocDBServer2" Protocol="tcp" />
+      <Endpoint Name="App_DocDBServer3" Protocol="tcp" />
+      <Endpoint Name="App_DocDBServer4" Protocol="tcp" />
+      <Endpoint Name="App_DocDBServer5" Protocol="tcp" />
+      <Endpoint Name="App_DocDBServer6" Protocol="tcp" />
+      <Endpoint Name="App_DocDBServer7" Protocol="tcp" />
+      <Endpoint Name="App_DocDBServer8" Protocol="tcp" />
+      <Endpoint Name="App_DocDBServer9" Protocol="tcp" />
+      <Endpoint Name="StandardReplicatorEndpoint" Protocol="tcp" />
+    </Endpoints>
+  </Resources>
+</ServiceManifest>

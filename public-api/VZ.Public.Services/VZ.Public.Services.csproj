@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\membership\VZ.Membership.Services\VZ.Membership.Services.csproj" />
+    <ProjectReference Include="..\..\shared\VZ.Shared\VZ.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Data\" />
+  </ItemGroup>
+
+</Project>

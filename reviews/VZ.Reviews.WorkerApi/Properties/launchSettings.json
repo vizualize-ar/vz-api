@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TrueRevue.Reviews.WorkerApi": {
+      "commandName": "Project",
+      "commandLineArgs": "start -port 7072"
+    }
+  }
+}

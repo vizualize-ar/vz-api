@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AzureFunctionsVersion>v3</AzureFunctionsVersion>
+    <AssemblyName>VZ.Public.Api</AssemblyName>
+    <RootNamespace>VZ.Public.Api</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\membership\VZ.Membership.Services\VZ.Membership.Services.csproj" />
+    <ProjectReference Include="..\..\orders\VZ.Orders.Services\VZ.Orders.Services.csproj" />
+    <ProjectReference Include="..\..\shared\VZ.Shared\VZ.Shared.csproj" />
+    <ProjectReference Include="..\VZ.Public.Services\VZ.Public.Services.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>

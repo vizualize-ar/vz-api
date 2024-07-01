@@ -1,0 +1,33 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=http;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==",
+    "WEBSITE_RUN_FROM_PACKAGE": 1,
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "ApiBaseUrl": "http://localhost:7000",
+    "ApiToken": "RO6jF8YyuZ",
+    "Auth0Domain": "truetest.auth0.com",
+    "Auth0ClientID": "DLhXNO8bgwcKrGa1UDo3Y3VVeqrwgP5Q",
+    "Auth0SigningCertificate": "MIIC/zCCAeegAwIBAgIJZh0WSV9GPempMA0GCSqGSIb3DQEBCwUAMB0xGzAZBgNVBAMTEnRydWV0ZXN0LmF1dGgwLmNvbTAeFw0xOTAyMTAwMjU5NThaFw0zMjEwMTkwMjU5NThaMB0xGzAZBgNVBAMTEnRydWV0ZXN0LmF1dGgwLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALnTG+7xOkh24XsskDTyO73C/KjF7C9xZ/2n7X6b/LQb0QTT5sF0ZrUvSYyAmE0ruRRLPo/BhbWdcbmYmPEVfWIKZpGGwmIht2rrBnU0wDPf837wreI297dneuHQJFWDQoq6B+U1MfiI+3ksVKMB5TkSqvdoN0w9K/b6q0BbbpmJ557UfQkYnYKs4xVzBVgkPmTJ3uf84cFen5oD5yUqFM+gE7l+ZN66rpEVWs4KXaS9c4mYUM2/mUht1aDBsJR6w49TISbqjZn1f23KrqZKAD9Ayk1Y13GnTnkRY/nRoyzny9M72yvkdNZjfFb/wI4eIPfCnb0NiHrlKRDEySZLksMCAwEAAaNCMEAwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQU4pYkNi/GO7sA3dKm2k+YsfWaNxEwDgYDVR0PAQH/BAQDAgKEMA0GCSqGSIb3DQEBCwUAA4IBAQBcDruqTDowjKqb24zf6/K1MwCwEOuyg7SYPQxYdyn2Y2f1NInVMQgt6/h0VLoDqKUwW7Uwc89w6OzQHdP+uIdpOJvcWrrAGHutqYNlrPTWHb1r3lBiaW3meQHUhMuMGZGnrq55873aOIXPK9LC+RCwSmS+bpoeg9W7xElP8E2z0b5vCSy7i4vzpv/7rfxB2MHOJEMaNXLY/BZ4gtgtuJcoGe+M94+d7LyM8vgxgfzm4aDmyDTojLxMM7+nS67fwbOmRBMF62W9GPsaeeew17wE5p4t3E2PP4IMJVYXOTcFTWFZRHHdEBDqwYtke3xoobX3luaP5r3/bXgXMeUi8zxj",
+    "Auth0.BusinessPortal.Certificate": "MIIDATCCAemgAwIBAgIJVskh4Mh1TweHMA0GCSqGSIb3DQEBCwUAMB4xHDAaBgNVBAMTE3RycWJwMGVmMi5hdXRoMC5jb20wHhcNMTkwNjI2MTM1NDU2WhcNMzMwMzA0MTM1NDU2WjAeMRwwGgYDVQQDExN0cnFicDBlZjIuYXV0aDAuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsPw9bZgcqA1bOf12trvxpxTZK5CDMnYMI8YGq2ARvUnYhyxHFj5BqkjrMmRJbCvT2ifNTU1caB0SDKX/EQx0YTBFfYpA69Whvia7c9k53cYsGpF9Mf4COiSuorZdZyBvMVftY46EE+ShgvyyOh8iStNP6ALBf3mwvbE11jP97GEX4R91JzFZzlM80D2+9ekcejtzRae3WKaq7YPeKRVmhngm5/dHmlnJT9QHPLvcFn9yNY09qI8SC9ObeqniHGZaTpwcSH995jXNv5piwnUsPjVKCzO1UICw+q0v42CM4dr/xPOI3vj9pluMv3bXCEkiQotTQXatuoz8ZGxBq5jTlQIDAQABo0IwQDAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBRhbuPa6VZjj1ZC1yiTsgE30qRMRTAOBgNVHQ8BAf8EBAMCAoQwDQYJKoZIhvcNAQELBQADggEBABtMaW5leO5ahD6eH4wNejknniQCEk31GAeO4r7kMM+4PeYHihad50Yn3s9HZBmwSKTWy/D0Lwrb1TU3DiB0x/SKhXmZf4srMJCqEmLwZ6vpTqUKm3d/lrdUUzLzDo6trkPAndLVLLQCNAlZnSskCeQPwtEfc9rWMTfQdz9OH1K4ZGfhMFHoZ75/CuX3CotAKQrBRCqD7dtCwL0kI+8SUGSaMXLZk2wd2l0qtTzPaVgXfs2wsh0LLCLzb68C0jDLuK2CxEVVsvH0e/mGyhpO5I3P2bGRf+bcKrpTmB6lbKP9ez6HEMHd/ai2CPKVZb41Bx+mI30Asa4bbzWBGttzVac=",
+    "Auth0.BusinessPortal.ClientId": "uHS2fZdcsn2chnfgreqHLNyd5IyfYiSB",
+    "Auth0.BusinessPortal.Domain": "trqbp0ef2.auth0.com",
+    "Auth0.ConsumerPortalClientID": "6mgMXVp6M9C85X3lXj5PVZKhnJzq5v9H",
+    "BlobConnectionString": "DefaultEndpointsProtocol=https;AccountName=trdevmedia;AccountKey=5I6Vjyk/hjoNPueO4xiFYLv11cTyeTEioNjYSPKTWaH4Gmw/H4WWhi65PNfpOT8zA0GF6M3uhFbvFQ7FDZuMSg==;EndpointSuffix=core.windows.net",
+    "BlobReviewMediaContainer": "review-media",
+    "BlobReviewRequestMediaContainer": "review-requests-media",
+    "CDN.ReviewImages": "https://trdevmedia.blob.core.windows.net/review-media/",
+    "CosmosDBAccountEndpointUrl": "https://localhost:8081",
+    "CosmosDBAccountKey": "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==",
+    "DatabaseName": "vz-dev",
+    "Encryption.Key": "89ufoADBzGu/dxsLN5bqZvxxmly5nWixQuuIyX/UolU=",
+    "Encryption.IV": "uo9UsHzcW1KdVRdczKVtpg==",
+    "EventGridTopicEndpoint": "http://localhost:5000/tr-event-bus",
+    "EventGridTopicKey": "review_event",
+    "PostgresConnection": "Server=localhost;Database=vz-dev;Port=5432;User Id=devuser;Password=Password2020!;"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*"
+  }
+}

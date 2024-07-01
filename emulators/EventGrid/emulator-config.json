@@ -1,0 +1,80 @@
+﻿{
+  "port": 5000,
+  "topics": [
+    {
+      "name": "vz-event-bus",
+      "subscriptions": [
+        {
+          "name": "CreateBusinessReviewRequest-Subscription",
+          "eventTypes": [ "NewBusinessOrderCreated" ], /*Leave null to match all event types*/
+          "SubjectBeginsWith": "",
+          "SubjectEndsWith": "",
+          "endpointUrl": "https://localhost:7000/worker/CreateBusinessReviewRequest",
+          "dispatchStrategy": "DefaultHttpStrategy"
+        },
+        {
+          "name": "UpdateReviewInfo-Subscription",
+          "eventTypes": [ "BusinessReviewCreated" ], /*Leave null to match all event types*/
+          "SubjectBeginsWith": "",
+          "SubjectEndsWith": "",
+          "endpointUrl": "https://localhost:7000/worker/UpdateReviewInfo",
+          "dispatchStrategy": "DefaultHttpStrategy"
+        },
+        {
+          "name": "UpdateReviewSummaries-Subscription",
+          "eventTypes": [ "BusinessReviewCreated" ], /*Leave null to match all event types*/
+          "SubjectBeginsWith": "",
+          "SubjectEndsWith": "",
+          "endpointUrl": "https://localhost:7000/worker/UpdateReviewSummaries",
+          "dispatchStrategy": "DefaultHttpStrategy"
+        },
+        {
+          "name": "UpdateProductReviewImages-Subscription",
+          "eventTypes": [ "BusinessReviewCreated" ], /*Leave null to match all event types*/
+          "SubjectBeginsWith": "",
+          "SubjectEndsWith": "",
+          "endpointUrl": "https://localhost:7000/worker/UpdateProductReviewImages",
+          "dispatchStrategy": "DefaultHttpStrategy"
+        },
+        {
+          "name": "UpdateThumbnailImages-Subscription",
+          "eventTypes": [ "ImageThumbnailCreated" ], /*Leave null to match all event types*/
+          "SubjectBeginsWith": "",
+          "SubjectEndsWith": "",
+          "endpointUrl": "https://localhost:7000/worker/UpdateThumbnailImages",
+          "dispatchStrategy": "DefaultHttpStrategy"
+        },
+        {
+          "name": "UploadBlockchain-Subscription",
+          "eventTypes": [ "UploadBlockchain" ], /*Leave null to match all event types*/
+          "SubjectBeginsWith": "",
+          "SubjectEndsWith": "",
+          "endpointUrl": "https://localhost:7073/runtime/webhooks/eventgrid?functionName=BlockChainUpload",
+          "dispatchStrategy": "DefaultHttpStrategy"
+        },
+        {
+          "name": "BlockChainUploadComplete-Subscription",
+          "eventTypes": [ "BlockchainUploadComplete" ], /*Leave null to match all event types*/
+          "SubjectBeginsWith": "",
+          "SubjectEndsWith": "",
+          "endpointUrl": "https://localhost:7000/worker/BlockChainUploadComplete",
+          "dispatchStrategy": "DefaultHttpStrategy"
+        },
+        {
+          "name": "ProcessProductViewedEvent-Subscription",
+          "eventTypes": [ "ProductViewed" ], /*Leave null to match all event types*/
+          "SubjectBeginsWith": "",
+          "SubjectEndsWith": "",
+          "endpointUrl": "https://localhost:7000/worker/ProcessProductViewedEvent",
+          "dispatchStrategy": "DefaultHttpStrategy"
+        }
+      ]
+    }
+  ],
+  "dispatchStrategies": [
+    {
+      "name": "DefaultHttpStrategy",
+      "type": "EventGridEmulator.Logic.DispatchStrategies.DefaultHttpStrategy"
+    }
+  ]
+}

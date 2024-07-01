@@ -1,0 +1,16 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "CosmosDBAccountEndpointUrl": "https://localhost:8081",
+    "CosmosDBAccountKey": "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==",
+    "DatabaseName": "truerevue-dev",
+    "Auth0Domain": "truetest.auth0.com",
+    "Auth0ClientID": "https://localhost:7071",
+    "Auth0ManagementApiAudience": "https://truetest.auth0.com/api/v2/",
+    "ApplicationClientID": "TSUAJUvK1HwjCL5iozSMQBOo0s1vRWn3",
+    "ApplicationClientSecret": "i8y8GyzbhzJDKJCNXnBG7z-HAWnYMWP5bBrMHRZvrM-VLVyQQeKvzgvaIBtVxxrt",
+    "EventGridTopicEndpoint": "http://localhost:5000/tr-event-bus"
+  }
+}

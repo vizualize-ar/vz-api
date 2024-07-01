@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceManifest
+  
+  Name="GatewayService"
+  Version="#(REPLACE_ApplicationCodeConfigVersion)" 
+  
+  xsi:schemaLocation="http://schemas.microsoft.com/2011/01/fabric WinFabServiceModel.xsd"
+  xmlns="http://schemas.microsoft.com/2011/01/fabric"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Description>Service that implements a stateless Gateway service</Description>
+  <ServiceTypes>
+    <StatelessServiceType ServiceTypeName="GatewayService" />
+  </ServiceTypes>
+  <CodePackage Name="GatewayService.Code" Version="#(REPLACE_ApplicationCodeVersion)">
+    <SetupEntryPoint>
+      <ExeHost>
+        <Program>DocumentDB.StartupEntryPoint.exe</Program>
+        <!-- MUST be in sync with ServiceStartupEntryPoint -->
+        <Arguments>"GatewayService"</Arguments>
+      </ExeHost>
+    </SetupEntryPoint>
+    <EntryPoint>
+      <ExeHost>
+        <Program>DocumentDB.GatewayService.exe</Program>
+      </ExeHost>
+    </EntryPoint>
+  </CodePackage>
+  <ConfigPackage Name="GatewayService.Config" Version="#(REPLACE_ApplicationConfigVersion)" />
+</ServiceManifest>

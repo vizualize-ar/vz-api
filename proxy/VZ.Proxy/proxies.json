@@ -1,0 +1,143 @@
+{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "membership_businesses_list": {
+      "debug": false,
+      "matchCondition": {
+        "route": "/businesses",
+        "methods": [ "GET" ]
+      },
+      "backendUri": "%membership_api%/businesses"
+    },
+    "membership_businesses_path": {
+      "debug": false,
+      "matchCondition": {
+        "route": "/businesses/{*restOfPath}"
+      },
+      "backendUri": "%membership_api%/businesses/{restOfPath}"
+    },
+    "membership_users_list": {
+      "debug": false,
+      "matchCondition": {
+        "route": "/users",
+        "methods": [ "GET" ]
+      },
+      "backendUri": "%membership_api%/users"
+    },
+    "membership_users_path": {
+      "debug": false,
+      "matchCondition": {
+        "route": "/users/{*restOfPath}",
+        "methods": [ "GET" ]
+      },
+      "backendUri": "%membership_api%/users/{restOfPath}"
+    },
+    "w_membership_products_path": {
+      "debug": false,
+      "matchCondition": {
+        "route": "/w/products/{*restOfPath}",
+        "methods": [ "GET" ]
+      },
+      "backendUri": "%membership_api%/w/products/{restOfPath}"
+    },
+    "bp_locations_list": {
+      "debug": false,
+      "matchCondition": {
+        "route": "/bp/locations",
+        "methods": [ "GET" ]
+      },
+      "backendUri": "%membership_api%/bp/locations"
+    },
+    "bp_membership_path": {
+      "debug": true,
+      "matchCondition": {
+        "route": "/bp/{*restOfPath}",
+        "methods": [ "GET", "POST", "OPTIONS", "DELETE", "PUT" ]
+      },
+      "backendUri": "%membership_api%/bp/{restOfPath}"
+    },
+    "cp_membership_users_path": {
+      "debug": false,
+      "matchCondition": {
+        "route": "/cp/users/{*restOfPath}",
+        "methods": [ "GET", "POST", "OPTIONS" ]
+      },
+      "backendUri": "%membership_api%/cp/users/{restOfPath}"
+    },
+    "cp_membership_businesses_path": {
+      "debug": false,
+      "matchCondition": {
+        "route": "/cp/businesses/{*restOfPath}",
+        "methods": [ "GET", "POST", "OPTIONS" ]
+      },
+      "backendUri": "%membership_api%/cp/businesses/{restOfPath}"
+    },
+    "public_products_path": {
+      "debug": false,
+      "matchCondition": {
+        "route": "/p/products/{*restOfPath}",
+        "methods": [ "GET", "OPTIONS" ]
+      },
+      "backendUri": "%public_api%/p/products/{restOfPath}",
+      "responseOverrides": {
+        "response.headers.Access-Control-Allow-Headers": "*"
+      }
+    },
+    "public_orders_add": {
+      "debug": false,
+      "matchCondition": {
+        "route": "/w/orders",
+        "methods": [ "POST" ]
+      },
+      "backendUri": "%public_api%/w/orders"
+    },
+
+    //, "orders_path": {
+    //  "debug": false,
+    //  "matchCondition": {
+    //    "route": "/orders/{*restOfPath}",
+    //    "methods": [ "GET" ]
+    //  },
+    //  "backendUri": "%orders_api%/orders/{restOfPath}"
+    //},
+    //"bp_orders_list": {
+    //  "debug": false,
+    //  "matchCondition": {
+    //    "route": "/bp/orders",
+    //    "methods": [ "GET", "OPTIONS" ]
+    //  },
+    //  "backendUri": "%orders_api%/bp/orders",
+    //  "responseOverrides": {
+    //    "response.headers.Access-Control-Expose-Headers": "x-tr-continuation"
+    //  }
+    //},
+    //"bp_orders_path": {
+    //  "debug": false,
+    //  "matchCondition": {
+    //    "route": "/bp/orders/{*restOfPath}",
+    //    "methods": [ "GET", "OPTIONS" ]
+    //  },
+    //  "backendUri": "%orders_api%/bp/orders/{restOfPath}",
+    //  "responseOverrides": {
+    //    "response.headers.Access-Control-Expose-Headers": "x-tr-continuation"
+    //  }
+    //},
+
+    "worker_api_path": {
+      "debug": false,
+      "matchCondition": {
+        "route": "/worker/{*restOfPath}",
+        "methods": [ "POST" ]
+      },
+      "backendUri": "%worker_api%/{restOfPath}"
+    }
+    //"image_worker_api_path": {
+    //  "debug": false,
+    //  "matchCondition": {
+    //    "route": "/image_worker/{*restOfPath}",
+    //    "methods": [ "POST" ]
+    //  },
+    //  "backendUri": "%image_worker_api%/{restOfPath}"
+    //}
+  }
+}

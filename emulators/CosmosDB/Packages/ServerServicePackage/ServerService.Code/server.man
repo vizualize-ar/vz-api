@@ -1,0 +1,1447 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<instrumentationManifest xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:trace="http://schemas.microsoft.com/win/2004/08/events/trace" xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <instrumentation>
+    <events>
+      <provider guid="{19DA8A96-FEC3-42ED-9216-C14A4ED17590}" messageFileName="D:\work\vizualize\code\vz-api\emulators\cosmosdb\Packages\ServerServicePackage\ServerService.Code\DocumentDB.Server.exe" name="DocDBServer" resourceFileName="D:\work\vizualize\code\vz-api\emulators\cosmosdb\Packages\ServerServicePackage\ServerService.Code\DocumentDB.Server.exe" symbol="_provider_DocDBServer">
+        <events>
+          <!-- MUST BE in sync with managed version of this event -->
+          <event message="$(string._event_ProcessInit)" template="_template_ProcessInit" symbol="_event_ProcessInit" value="100" level="win:Informational" />
+          <event message="$(string._event_CommonDebug)" template="_template_Common" symbol="_event_DebugInfo" value="1000" level="win:Verbose" />
+          <event message="$(string._event_Failure)" template="_template_Failure" symbol="_event_Failure" value="1001" level="win:Verbose" />
+          <event message="$(string._event_BeginReplicaActivity)" template="_template_BeginReplicaActivity" symbol="_event_BeginReplicaActivity" value="1002" level="win:Verbose" />
+          <event message="$(string._event_TransferActivity)" template="_template_TransferActivity" symbol="_event_TransferActivity" value="1003" level="win:Verbose" />
+          <event message="$(string._event_Replica)" template="_template_Replica" symbol="_event_Replica" value="1004" level="win:Verbose" />
+          <event message="$(string._event_BackendBeginRequest)" template="_template_BackendBeginRequest" symbol="_event_BackendBeginRequest" value="1005" level="win:Verbose" />
+          <event message="$(string._event_BackendEndRequest)" template="_template_BackendEndRequest" symbol="_event_BackendEndRequest" value="1006" level="win:Verbose" />
+          <event message="$(string._event_ReportQuotaInfo)" template="_template_ReportQuotaInfo" symbol="_event_ReportQuotaInfo" value="1007" level="win:Verbose" />
+          <event message="$(string._event_WatchdogState)" template="_template_WatchdogState" symbol="_event_WatchdogState" value="1008" level="win:Verbose" />
+          <event message="$(string._event_ModuleState)" template="_template_ModuleState" symbol="_event_ModuleState" value="1009" level="win:Verbose" />
+          <event message="$(string._event_ModuleHealth)" template="_template_ModuleHealth" symbol="_event_ModuleHealth" value="1010" level="win:Verbose" />
+          <event message="$(string._event_ReplicaHealth)" template="_template_ReplicaHealth" symbol="_event_ReplicaHealth" value="1011" level="win:Verbose" />
+          <event message="$(string._event_CommonDebugInfo)" template="_template_Common" symbol="_event_CommonDebugInfo" value="1012" level="win:Verbose" />
+          <event message="$(string._event_CommitDuration)" template="_template_CommitDuration" symbol="_event_CommitDuration" value="1013" level="win:Verbose" />
+          <event message="$(string._event_CRUDProgressNumber)" template="_template_CRUDProgressNumber" symbol="_event_CRUDProgressNumber" value="1014" level="win:Verbose" />
+          <event message="$(string._event_GetQuotaInternal)" template="_template_GetQuotaInternal" symbol="_event_GetQuotaInternal" value="1016" level="win:Verbose" />
+          <event message="$(string._event_ReplicaConfigurationRefreshed)" template="_template_ReplicaConfigurationRefreshed" symbol="_event_ReplicaConfigurationRefreshed" value="1017" level="win:Verbose" />
+          <event message="$(string._event_SslHandshakeAbandoned)" template="_template_SslHandshakeAbandoned" symbol="_event_SslHandshakeAbandoned" value="1020" level="win:Informational" />
+          <event message="$(string._event_NewRntbdChannelAcceptCompleted)" template="_template_NewRntbdChannelAcceptCompleted" symbol="_event_NewRntbdChannelAcceptCompleted" value="1021" level="win:Informational" />
+          <event message="$(string._event_ReportOnDiskQuota)" template="_template_ReportOnDiskQuota" symbol="_event_ReportOnDiskQuota" value="1022" level="win:Verbose" />
+          <event message="$(string._event_BeginIndexUpdateDispatch)" template="_template_BeginIndexUpdateDispatch" symbol="_event_BeginIndexUpdateDispatch" value="1023" level="win:Verbose" />
+          <event message="$(string._event_EndIndexUpdateDispatch)" template="_template_EndIndexUpdateDispatch" symbol="_event_EndIndexUpdateDispatch" value="1024" level="win:Verbose" />
+          <event message="$(string._event_BEFabricCallInfo)" template="_template_BEFabricCallInfo" symbol="_event_BEFabricCallInfo" value="1025" level="win:Verbose" />
+          <event message="$(string._event_BERequestAlert)" template="_template_BERequestAlert" symbol="_event_BERequestAlert" value="1026" level="win:Verbose" />
+          <event message="$(string._event_ConnectionThrottled)" template="_template_ConnectionThrottled" symbol="_event_ConnectionThrottled" value="1027" level="win:Verbose" />
+          <event message="$(string._event_NewReplicationChannelAcceptCompleted)" template="_template_NewReplicationChannel" symbol="_event_NewReplicationChannelAcceptCompleted" value="1028" level="win:Informational" />
+          <event message="$(string._event_NewReplicationChannelConnectCompleted)" template="_template_NewReplicationChannel" symbol="_event_NewReplicationChannelConnectCompleted" value="1029" level="win:Informational" />
+          <event message="$(string._event_ConnectionEvent)" template="_template_ConnectionEvent" symbol="_event_ConnectionEvent" value="1031" level="win:Informational" />
+          <event message="$(string._event_CosmosDBRequest)" template="_template_CosmosDBRequest" symbol="_event_CosmosDBRequest" value="1032" level="win:Verbose" />
+          <event message="$(string._event_BillingReportQuotaInfo)" template="_template_BillingReportQuotaInfo" symbol="_event_BillingReportQuotaInfo" value="1033" level="win:Verbose" />
+          <event message="$(string._event_AutoScaleInfo)" template="_template_AutoScaleInfo" symbol="_event_AutoScaleInfo" value="1034" level="win:Verbose" />
+          <event message="$(string._event_CosmosDBEndpoints)" template="_template_CosmosDBEndpoints" symbol="_event_CosmosDBEndpoints" value="1035" level="win:Informational" />
+          <event message="$(string._event_OfferThroughputInfo)" template="_template_OfferThroughputInfo" symbol="_event_OfferThroughputInfo" value="1036" level="win:Informational" />
+          <event message="$(string._event_PartitionKeyRangeOfferThroughputInfo)" template="_template_PartitionKeyRangeOfferThroughputInfo" symbol="_event_PartitionKeyRangeOfferThroughputInfo" value="1037" level="win:Informational" />
+          <event message="$(string._event_MetricsModuleEvent)" template="_template_MetricsModuleEvent" symbol="_event_MetricsModuleEvent" value="5000" level="win:Verbose" />
+          <event message="$(string._event_MetricsReplicaEvent)" template="_template_MetricsReplicaEvent" symbol="_event_MetricsReplicaEvent" value="5001" level="win:Verbose" />
+          <event message="$(string._event_MetricsCollectionEvent)" template="_template_MetricsCollectionEvent" symbol="_event_MetricsCollectionEvent" value="5002" level="win:Verbose" />
+          <event message="$(string._event_MetricsUnaggregatedModuleEvent)" template="_template_MetricsUnaggregatedModuleEvent" symbol="_event_MetricsUnaggregatedModuleEvent" value="5003" level="win:Verbose" />
+          <event message="$(string._event_MetricsUnaggregatedReplicaEvent)" template="_template_MetricsUnaggregatedReplicaEvent" symbol="_event_MetricsUnaggregatedReplicaEvent" value="5004" level="win:Verbose" />
+          <event message="$(string._event_MetricsUnaggregatedCollectionEvent)" template="_template_MetricsUnaggregatedCollectionEvent" symbol="_event_MetricsUnaggregatedCollectionEvent" value="5005" level="win:Verbose" />
+          <event message="$(string._event_MetricsScriptStatsEvent)" template="_template_MetricsScriptStatsEvent" symbol="_event_MetricsScriptStatsEvent" value="5007" level="win:Verbose" />
+          <event message="$(string._event_SqlQueryExecMetrics)" template="_template_SqlQueryExecMetrics" symbol="_event_SqlQueryExecMetrics" value="5008" level="win:Verbose" />
+          <event message="$(string._event_MetricsDocAnalyzerEvent)" template="_template_MetricsDocAnalyzerEvent" symbol="_event_MetricsDocAnalyzerEvent" value="5009" level="win:Verbose" />
+          <event message="$(string._event_MetricsIndexingPolicyEvent)" template="_template_MetricsIndexingPolicyEvent" symbol="_event_MetricsIndexingPolicyEvent" value="5010" level="win:Verbose" />
+          <event message="$(string._event_MetricsScriptStatsJSQueryEvent)" template="_template_MetricsScriptStatsJSQueryEvent" symbol="_event_MetricsScriptStatsJSQueryEvent" value="5011" level="win:Verbose" />
+          <event message="$(string._event_MetricsCollectionIndexOperationStatsEvent)" template="_template_MetricsCollectionIndexOperationStatsEvent" symbol="_event_MetricsCollectionIndexOperationStatsEvent" value="5012" level="win:Verbose" />
+          <event message="$(string._event_AlertReplicaEvent)" template="_template_AlertReplicaEvent" symbol="_event_AlertReplicaEvent" value="6000" level="win:Verbose" />
+          <event message="$(string._event_AlertModuleEvent)" template="_template_AlertModuleEvent" symbol="_event_AlertModuleEvent" value="6001" level="win:Verbose" />
+          <event message="$(string._event_MetricsSchemaContainerUpdateEvent)" template="_template_MetricsSchemaContainerUpdateEvent" symbol="_event_MetricsSchemaContainerUpdateEvent" value="5013" level="win:Verbose" />
+          <event message="$(string._event_MetricsSchemaContainerStatsEvent)" template="_template_MetricsSchemaContainerStatsEvent" symbol="_event_MetricsSchemaContainerStatsEvent" value="5014" level="win:Verbose" />
+          <event message="$(string._event_MetricsRTTStatsEvent)" template="_template_MetricsRTTStatsEvent" symbol="_event_MetricsRTTStatsEvent" value="5015" level="win:Verbose" />
+          <event message="$(string._event_MetricsBackupEvent)" template="_template_MetricsBackupEvent" symbol="_event_MetricsBackupEvent" value="5016" level="win:Verbose" />
+          <event message="$(string._event_SchedulerDelayEvent)" template="_template_SchedulerDelayEvent" symbol="_event_SchedulerDelayEvent" value="5020" level="win:Verbose" />
+          <event message="$(string._event_MetricsTimeToLiveStatsEvent)" template="_template_MetricsTimeToLiveStatsEvent" symbol="_event_MetricsTimeToLiveStatsEvent" value="5021" level="win:Verbose" />
+          <event message="$(string._event_MetricsGeoReplicationDelayEvent)" template="_template_MetricsGeoReplicationDelayEvent" symbol="_event_MetricsGeoReplicationDelayEvent" value="5022" level="win:Verbose" />
+          <event message="$(string._event_MetricsCommitCompleteDelayEvent)" template="_template_MetricsCommitCompleteDelayEvent" symbol="_event_MetricsCommitCompleteDelayEvent" value="5023" level="win:Verbose" />
+          <event message="$(string._event_SqlQueryPiiEvent)" template="_template_SqlQueryPiiEvent" symbol="_event_SqlQueryPiiEvent" value="7000" level="win:Verbose" />
+        </events>
+        <tasks>
+          <task message="$(string._task_Generic)" name="Generic" value="100" symbol="_task_Generic" />
+          <task message="$(string._task_LocalStoreProvider)" name="LocalStoreProvider" value="101" symbol="_task_LocalStoreProvider" />
+          <task message="$(string._task_MasterStoreProvider)" name="MasterStoreProvider" value="102" symbol="_task_MasterStoreProvider" />
+          <task message="$(string._task_ServerStoreProvider)" name="ServerStoreProvider" value="103" symbol="_task_ServerStoreProvider" />
+          <task message="$(string._task_LocalStoreResourceProvider)" name="LocalStoreResourceProvider" value="104" symbol="_task_LocalStoreResourceProvider" />
+          <task message="$(string._task_LocalStoreSession)" name="LocalStoreSession" value="105" symbol="_task_LocalStoreSession" />
+          <task message="$(string._task_ResourceSerializer)" name="ResourceSerializer" value="106" symbol="_task_ResourceSerializer" />
+          <task message="$(string._task_ResourceRecordEnumerator)" name="ResourceRecordEnumerator" value="107" symbol="_task_ResourceRecordEnumerator" />
+          <task message="$(string._task_Esent_Instance)" name="Esent_Instance" value="108" symbol="_task_Esent_Instance" />
+          <task message="$(string._task_Esent_Database)" name="Esent_Database" value="109" symbol="_task_Esent_Database" />
+          <task message="$(string._task_Esent_Session)" name="Esent_Session" value="110" symbol="_task_Esent_Session" />
+          <task message="$(string._task_Esent_Cursor)" name="Esent_Cursor" value="111" symbol="_task_Esent_Cursor" />
+          <task message="$(string._task_Transport_Channel_Processor)" name="Transport_Channel_Processor" value="112" symbol="_task_Transport_Channel_Processor" />
+          <task message="$(string._task_Transport_Listener)" name="Transport_Listener" value="113" symbol="_task_Transport_Listener" />
+          <task message="$(string._task_Transport_Listener_Wrapper)" name="Transport_Listener_Wrapper" value="114" symbol="_task_Transport_Listener_Wrapper" />
+          <task message="$(string._task_Transport_Channel_Wrapper)" name="Transport_Channel_Wrapper" value="115" symbol="_task_Transport_Channel_Wrapper" />
+          <task message="$(string._task_Transport_TransportMessage)" name="Transport_TransportMessage" value="116" symbol="_task_Transport_TransportMessage" />
+          <task message="$(string._task_OrderedReplicator)" name="OrderedReplicator" value="117" symbol="_task_OrderedReplicator" />
+          <task message="$(string._task_ReplicationBatch)" name="ReplicationBatch" value="118" symbol="_task_ReplicationBatch" />
+          <task message="$(string._task_ReplicationProxy)" name="ReplicationProxy" value="119" symbol="_task_ReplicationProxy" />
+          <task message="$(string._task_RequestOperationContext)" name="RequestOperationContext" value="120" symbol="_task_RequestOperationContext" />
+          <task message="$(string._task_TransactionalResourceProvider)" name="TransactionalResourceProvider" value="121" symbol="_task_TransactionalResourceProvider" />
+          <task message="$(string._task_StatefulServiceReplica)" name="StatefulServiceReplica" value="122" symbol="_task_StatefulServiceReplica" />
+          <task message="$(string._task_AsyncOperationContext)" name="AsyncOperationContext" value="123" symbol="_task_AsyncOperationContext" />
+          <task message="$(string._task_GenericOperationContext)" name="GenericOperationContext" value="124" symbol="_task_GenericOperationContext" />
+          <task message="$(string._task_CopyContextEnumerator)" name="CopyContextEnumerator" value="125" symbol="_task_CopyContextEnumerator" />
+          <task message="$(string._task_CopyStateEnumerator)" name="CopyStateEnumerator" value="126" symbol="_task_CopyStateEnumerator" />
+          <task message="$(string._task_ReplicaStateMachine)" name="ReplicaStateMachine" value="127" symbol="_task_ReplicaStateMachine" />
+          <task message="$(string._task_ServiceModule)" name="ServiceModule" value="128" symbol="_task_ServiceModule" />
+          <task message="$(string._task_TombstonePurger)" name="TombstonePurger" value="129" symbol="_task_TombstonePurger" />
+          <task message="$(string._task_AsyncOperationCallback)" name="AsyncOperationCallback" value="130" symbol="_task_AsyncOperationCallback" />
+          <task message="$(string._task_StatefulServiceFactory)" name="StatefulServiceFactory" value="131" symbol="_task_StatefulServiceFactory" />
+          <task message="$(string._task_SecondaryOperationProcessor)" name="SecondaryOperationProcessor" value="132" symbol="_task_SecondaryOperationProcessor" />
+          <task message="$(string._task_BatchCommitAck)" name="BatchCommitAck" value="133" symbol="_task_BatchCommitAck" />
+          <task message="$(string._task_BatchEnqueAck)" name="BatchEnqueAck" value="134" symbol="_task_BatchEnqueAck" />
+          <task message="$(string._task_ExceptionHandler)" name="ExceptionHandler" value="135" symbol="_task_ExceptionHandler" />
+          <task message="$(string._task_LocalStoreHelpers)" name="LocalStoreHelpers" value="136" symbol="_task_LocalStoreHelpers" />
+          <task message="$(string._task_ScriptEngine)" name="ScriptEngine" value="137" symbol="_task_ScriptEngine" />
+          <task message="$(string._task_IndexManager)" name="IndexManager" value="138" symbol="_task_IndexManager" />
+          <task message="$(string._task_RequestMessage)" name="RequestMessage" value="139" symbol="_task_RequestMessage" />
+          <task message="$(string._task_Authorizer)" name="Authorizer" value="140" symbol="_task_Authorizer" />
+          <task message="$(string._task_LocalStoreFileProvider)" name="LocalStoreFileProvider" value="141" symbol="_task_LocalStoreFileProvider" />
+          <task message="$(string._task_BackupManager)" name="BackupManager" value="142" symbol="_task_BackupManager" />
+          <task message="$(string._task_FileUploader)" name="FileUploader" value="143" symbol="_task_FileUploader" />
+          <task message="$(string._task_HttpClient)" name="HttpClient" value="144" symbol="_task_HttpClient" />
+          <task message="$(string._task_HttpService)" name="HttpService" value="145" symbol="_task_HttpService" />
+          <task message="$(string._task_Purger)" name="Purger" value="146" symbol="_task_Purger" />
+          <task message="$(string._task_BlobClient)" name="BlobClient" value="147" symbol="_task_BlobClient" />
+          <task message="$(string._task_PerformanceCounters)" name="PerformanceCounters" value="148" symbol="_task_PerformanceCounters" />
+          <task message="$(string._task_HttpListener)" name="HttpListener" value="149" symbol="_task_HttpListener" />
+          <task message="$(string._task_HttpChannel)" name="HttpChannel" value="150" symbol="_task_HttpChannel" />
+          <task message="$(string._task_ResponseMessage)" name="ResponseMessage" value="151" symbol="_task_ResponseMessage" />
+          <task message="$(string._task_TimeProvider)" name="TimeProvider" value="152" symbol="_task_TimeProvider" />
+          <task message="$(string._task_BackgroundCompressor)" name="BackgroundCompressor" value="153" symbol="_task_BackgroundCompressor" />
+          <task message="$(string._task_IndexBuilder)" name="IndexBuilder" value="154" symbol="_task_IndexBuilder" />
+          <task message="$(string._task_StructuralIndex)" name="StructuralIndex" value="155" symbol="_task_StructuralIndex" />
+          <task message="$(string._task_SecondaryIndex)" name="SecondaryIndex" value="156" symbol="_task_SecondaryIndex" />
+          <task message="$(string._task_IndexingPolicy)" name="IndexingPolicy" value="157" symbol="_task_IndexingPolicy" />
+          <task message="$(string._task_ResourceContentProvider)" name="ResourceContentProvider" value="158" symbol="_task_ResourceContentProvider" />
+          <task message="$(string._task_AsyncTaskQueue)" name="AsyncTaskQueue" value="159" symbol="_task_AsyncTaskQueue" />
+          <task message="$(string._task_SystemResourceManager)" name="SystemResourceManager" value="160" symbol="_task_SystemResourceManager" />
+          <task message="$(string._task_TraceFromScript)" name="TraceFromScript" value="161" symbol="_task_TraceFromScript" />
+          <task message="$(string._task_ResourceQuotaManager)" name="ResourceQuotaManager" value="162" symbol="_task_ResourceQuotaManager" />
+          <task message="$(string._task_BwTreeStore)" name="BwTreeStore" value="163" symbol="_task_BwTreeStore" />
+          <task message="$(string._task_LazyIndexProcessor)" name="LazyIndexProcessor" value="164" symbol="_task_LazyIndexProcessor" />
+          <task message="$(string._task_RateLimiter)" name="RateLimiter" value="165" symbol="_task_RateLimiter" />
+          <task message="$(string._task_ReplicaConfigurationManager)" name="ReplicaConfigurationManager" value="166" symbol="_task_ReplicaConfigurationManager" />
+          <task message="$(string._task_ReplicaConfiguration)" name="ReplicaConfiguration" value="167" symbol="_task_ReplicaConfiguration" />
+          <task message="$(string._task_AsyncWriterLock)" name="AsyncWriterLock" value="168" symbol="_task_AsyncWriterLock" />
+          <task message="$(string._task_StandardScheduler)" name="StandardScheduler" value="169" symbol="_task_StandardScheduler" />
+          <task message="$(string._task_MachineConfiguration)" name="MachineConfiguration" value="170" symbol="_task_MachineConfiguration" />
+          <task message="$(string._task_IndexingHelper)" name="IndexingHelper" value="171" symbol="_task_IndexingHelper" />
+          <task message="$(string._task_ProcessMonitor)" name="ProcessMonitor" value="172" symbol="_task_ProcessMonitor" />
+          <task message="$(string._task_ServiceHostWatchdog)" name="ServiceHostWatchdog" value="173" symbol="_task_ServiceHostWatchdog" />
+          <task message="$(string._task_DocDbWatchdog)" name="DocDbWatchdog" value="174" symbol="_task_DocDbWatchdog" />
+          <task message="$(string._task_ClientWWSChannelWrapper)" name="ClientWWSChannelWrapper" value="175" symbol="_task_ClientWWSChannelWrapper" />
+          <task message="$(string._task_CryptUtil)" name="CryptUtil" value="176" symbol="_task_CryptUtil" />
+          <task message="$(string._task_CriticalSection)" name="CriticalSection" value="177" symbol="_task_CriticalSection" />
+          <task message="$(string._task_XML)" name="XML" value="178" symbol="_task_XML" />
+          <task message="$(string._task_Chakra)" name="Chakra" value="179" symbol="_task_Chakra" />
+          <task message="$(string._task_MemoryContext)" name="MemoryContext" value="180" symbol="_task_MemoryContext" />
+          <task message="$(string._task_NodeMatcher)" name="NodeMatcher" value="181" symbol="_task_NodeMatcher" />
+          <task message="$(string._task_Test)" name="Test" value="182" symbol="_task_Test" />
+          <task message="$(string._task_BinaryReaderWriter)" name="BinaryReaderWriter" value="183" symbol="_task_BinaryReaderWriter" />
+          <task message="$(string._task_JsonReaderWriter)" name="JsonReaderWriter" value="184" symbol="_task_JsonReaderWriter" />
+          <task message="$(string._task_JsonRewriter)" name="JsonRewriter" value="185" symbol="_task_JsonRewriter" />
+          <task message="$(string._task_HeapMemoryManager)" name="HeapMemoryManager" value="186" symbol="_task_HeapMemoryManager" />
+          <task message="$(string._task_NameValueCollection)" name="NameValueCollection" value="187" symbol="_task_NameValueCollection" />
+          <task message="$(string._task_TimeoutManager)" name="TimeoutManager" value="188" symbol="_task_TimeoutManager" />
+          <task message="$(string._task_UmsScheduler)" name="UmsScheduler" value="189" symbol="_task_UmsScheduler" />
+          <task message="$(string._task_Configuration)" name="Configuration" value="190" symbol="_task_Configuration" />
+          <task message="$(string._task_FabricOperationData)" name="FabricOperationData" value="191" symbol="_task_FabricOperationData" />
+          <task message="$(string._task_StringResult)" name="StringResult" value="192" symbol="_task_StringResult" />
+          <task message="$(string._task_TraceProvider)" name="TraceProvider" value="193" symbol="_task_TraceProvider" />
+          <task message="$(string._task_TransportResponseMessage)" name="TransportResponseMessage" value="194" symbol="_task_TransportResponseMessage" />
+          <task message="$(string._task_ResourceCursor)" name="ResourceCursor" value="195" symbol="_task_ResourceCursor" />
+          <task message="$(string._task_BitEncoding)" name="BitEncoding" value="196" symbol="_task_BitEncoding" />
+          <task message="$(string._task_BwTree)" name="BwTree" value="197" symbol="_task_BwTree" />
+          <task message="$(string._task_BwTreeFlashManager)" name="BwTreeFlashManager" value="198" symbol="_task_BwTreeFlashManager" />
+          <task message="$(string._task_BwTreeCacheMgr)" name="BwTreeCacheMgr" value="199" symbol="_task_BwTreeCacheMgr" />
+          <task message="$(string._task_BwTreeMappingTable)" name="BwTreeMappingTable" value="200" symbol="_task_BwTreeMappingTable" />
+          <task message="$(string._task_BwTreeClock)" name="BwTreeClock" value="201" symbol="_task_BwTreeClock" />
+          <task message="$(string._task_BwTreeLSS)" name="BwTreeLSS" value="202" symbol="_task_BwTreeLSS" />
+          <task message="$(string._task_BwTreeFileStream)" name="BwTreeFileStream" value="203" symbol="_task_BwTreeFileStream" />
+          <task message="$(string._task_BwTreeLssGC)" name="BwTreeGarbageCollector" value="204" symbol="_task_BwTreeLssGC" />
+          <task message="$(string._task_FabricReplicator)" name="FabricReplicator" value="205" symbol="_task_FabricReplicator" />
+          <task message="$(string._task_GenericFailureInjection)" name="GenericFailureInjection" value="206" symbol="_task_GenericFailureInjection" />
+          <task message="$(string._task_IntersectPlan)" name="IntersectPlan" value="207" symbol="_task_IntersectPlan" />
+          <task message="$(string._task_InvertedIndex)" name="InvertedIndex" value="208" symbol="_task_InvertedIndex" />
+          <task message="$(string._task_ScanPlan)" name="ScanPlan" value="209" symbol="_task_ScanPlan" />
+          <task message="$(string._task_InvertedIndexReader)" name="InvertedIndexReader" value="210" symbol="_task_InvertedIndexReader" />
+          <task message="$(string._task_UnionPlan)" name="UnionPlan" value="211" symbol="_task_UnionPlan" />
+          <task message="$(string._task_FileIOScheduler)" name="FileIOScheduler" value="212" symbol="_task_FileIOScheduler" />
+          <task message="$(string._task_JetIndexComponent)" name="DiskIndexComponent" value="213" symbol="_task_JetIndexComponent" />
+          <task message="$(string._task_IndexSegment)" name="IndexSegment" value="214" symbol="_task_IndexSegment" />
+          <task message="$(string._task_JetIndexComponentReader)" name="DiskIndexComponentReader" value="215" symbol="_task_JetIndexComponentReader" />
+          <task message="$(string._task_MemIndexComponent)" name="MemIndexComponent" value="216" symbol="_task_MemIndexComponent" />
+          <task message="$(string._task_MemIndexComponentReader)" name="MemIndexComponentReader" value="217" symbol="_task_MemIndexComponentReader" />
+          <task message="$(string._task_TermPostingHelper)" name="TermPostingHelper" value="218" symbol="_task_TermPostingHelper" />
+          <task message="$(string._task_BloomFilter)" name="BloomFilter" value="219" symbol="_task_BloomFilter" />
+          <task message="$(string._task_NotifyProgressSequencer)" name="NotifyProgressSequencer" value="220" symbol="_task_NotifyProgressSequencer" />
+          <task message="$(string._task_FileSystemUtils)" name="FileSystemUtils" value="221" symbol="_task_FileSystemUtils" />
+          <task message="$(string._task_TcpTransport)" name="TcpTransport" value="224" symbol="_task_TcpTransport" />
+          <task message="$(string._task_IndexEncoder)" name="IndexEncoder" value="225" symbol="_task_IndexEncoder" />
+          <task message="$(string._task_QueryIL)" name="QueryIL" value="226" symbol="_task_QueryIL" />
+          <task message="$(string._task_QueryRuntime)" name="QueryRuntime" value="227" symbol="_task_QueryRuntime" />
+          <task message="$(string._task_SqlLang)" name="SqlLang" value="228" symbol="_task_SqlLang" />
+          <task message="$(string._task_BwTreePhysIdxMgr)" name="BwTreePhysIndexMgr" value="229" symbol="_task_BwTreePhysIdxMgr" />
+          <task message="$(string._task_AsyncReaderWriterLock)" name="AsyncReaderWriterLock" value="230" symbol="_task_AsyncReaderWriterLock" />
+          <task message="$(string._task_ReIndexer)" name="ReIndexer" value="231" symbol="_task_ReIndexer" />
+          <task message="$(string._task_LocalStoreAccessProvider)" name="LocalStoreAccessProvider" value="232" symbol="_task_LocalStoreAccessProvider" />
+          <task message="$(string._task_LocalStoreTable)" name="LocalStoreTable" value="233" symbol="_task_LocalStoreTable" />
+          <task message="$(string._task_LocalStoreTransaction)" name="LocalStoreTransaction" value="234" symbol="_task_LocalStoreTransaction" />
+          <task message="$(string._task_MessageQueue_TcpListenProcessor)" name="MessageQueue_TcpListenProcessor" value="235" symbol="_task_MessageQueue_TcpListenProcessor" />
+          <task message="$(string._task_MessageQueue_TransportManager)" name="MessageQueue_TransportManager" value="236" symbol="_task_MessageQueue_TransportManager" />
+          <task message="$(string._task_LocalStoreReferentialIntegrityManager)" name="LocalStoreReferentialIntegrityManager" value="237" symbol="_task_LocalStoreReferentialIntegrityManager" />
+          <task message="$(string._task_StorageDiagnostics)" name="StorageDiagnostics" value="238" symbol="_task_StorageDiagnostics" />
+          <task message="$(string._task_StoreProvider)" name="StoreProvider" value="239" symbol="_task_StoreProvider" />
+          <task message="$(string._task_DocumentClient)" name="DocumentClient" value="240" symbol="_task_DocumentClient" />
+          <task message="$(string._task_MessageQueue_ReliableMessaging)" name="MessageQueue_ReliableMessaging" value="241" symbol="_task_MessageQueue_ReliableMessaging" />
+          <task message="$(string._task_JavaScriptLang)" name="JavaScriptLang" value="242" symbol="_task_JavaScriptLang" />
+          <task message="$(string._task_Replicator)" name="Replicator" value="243" symbol="_task_Replicator" />
+          <task message="$(string._task_AsyncOperationContextBase)" name="AsyncOperationContextBase" value="244" symbol="_task_AsyncOperationContextBase" />
+          <task message="$(string._task_FabricServiceManagement)" name="FabricServiceManagement" value="245" symbol="_task_FabricServiceManagement" />
+          <task message="$(string._task_ReplicatedStore)" name="ReplicatedStore" value="246" symbol="_task_ReplicatedStore" />
+          <task message="$(string._task_ExpiredResourcePurger)" name="ExpiredResourcePurger" value="247" symbol="_task_ExpiredResourcePurger" />
+          <task message="$(string._task_Topology)" name="Topology" value="249" symbol="_task_Topology" />
+          <task message="$(string._task_SchemaInference)" name="SchemaInference" value="250" symbol="_task_SchemaInference" />
+          <task message="$(string._task_WinHttpClient)" name="WinHttpClient" value="254" symbol="_task_WinHttpClient" />
+          <task message="$(string._task_UniqueIndex)" name="UniqueIndex" value="256" symbol="_task_UniqueIndex" />
+          <task message="$(string._task_LogicalInvertedIndex)" name="LogicalInvertedIndex" value="257" symbol="_task_LogicalInvertedIndex" />
+          <task message="$(string._task_PhysicalInvertedIndex)" name="PhysicalInvertedIndex" value="258" symbol="_task_PhysicalInvertedIndex" />
+          <task message="$(string._task_Split)" name="Split" value="259" symbol="_task_Split" />
+          <task message="$(string._task_OperationLogPurger)" name="OperationLogPurger" value="261" symbol="_task_OperationLogPurger" />
+        </tasks>
+        <opcodes>
+          <opcode message="$(string._op_Generic)" name="Generic" value="100" symbol="_op_Generic" />
+          <opcode message="$(string._op_LocalStoreProvider_Open)" name="LocalStoreProvider_Open" value="101" symbol="_op_LocalStoreProvider_Open" />
+          <opcode message="$(string._op_LocalStoreProvider_CreateSession)" name="LocalStoreProvider_CreateSession" value="102" symbol="_op_LocalStoreProvider_CreateSession" />
+          <opcode message="$(string._op_LocalStoreProvider_Dispose)" name="LocalStoreProvider_Dispose" value="103" symbol="_op_LocalStoreProvider_Dispose" />
+          <opcode message="$(string._op_ResourceSerializer_Load)" name="ResourceSerializer_Load" value="104" symbol="_op_ResourceSerializer_Load" />
+          <opcode message="$(string._op_ResourceSerializer_Save)" name="ResourceSerializer_Save" value="105" symbol="_op_ResourceSerializer_Save" />
+          <opcode message="$(string._op_ResourceSerializer_SaveFeed)" name="ResourceSerializer_SaveFeed" value="106" symbol="_op_ResourceSerializer_SaveFeed" />
+          <opcode message="$(string._op_ResourceProvider_Create)" name="ResourceProvider_Create" value="107" symbol="_op_ResourceProvider_Create" />
+          <opcode message="$(string._op_ResourceProvider_Replace)" name="ResourceProvider_Replace" value="108" symbol="_op_ResourceProvider_Replace" />
+          <opcode message="$(string._op_ResourceProvider_Update)" name="ResourceProvider_Update" value="109" symbol="_op_ResourceProvider_Update" />
+          <opcode message="$(string._op_ResourceProvider_Delete)" name="ResourceProvider_Delete" value="110" symbol="_op_ResourceProvider_Delete" />
+          <opcode message="$(string._op_ResourceProvider_Read)" name="ResourceProvider_Read" value="111" symbol="_op_ResourceProvider_Read" />
+          <opcode message="$(string._op_ResourceProvider_ReadCollection)" name="ResourceProvider_ReadCollection" value="112" symbol="_op_ResourceProvider_ReadCollection" />
+          <opcode message="$(string._op_LocalStoreSession_StartTransaction)" name="LocalStoreSession_StartTransaction" value="113" symbol="_op_LocalStoreSession_StartTransaction" />
+          <opcode message="$(string._op_LocalStoreSession_CommitTransaction)" name="LocalStoreSession_CommitTransaction" value="114" symbol="_op_LocalStoreSession_CommitTransaction" />
+          <opcode message="$(string._op_LocalStoreSession_AbortTransaction)" name="LocalStoreSession_AbortTransaction" value="115" symbol="_op_LocalStoreSession_AbortTransaction" />
+          <opcode message="$(string._op_LocalStoreSession_Insert)" name="LocalStoreSession_Insert" value="116" symbol="_op_LocalStoreSession_Insert" />
+          <opcode message="$(string._op_LocalStoreSession_Read)" name="LocalStoreSession_Read" value="117" symbol="_op_LocalStoreSession_Read" />
+          <opcode message="$(string._op_LocalStoreSession_Replace)" name="LocalStoreSession_Replace" value="118" symbol="_op_LocalStoreSession_Replace" />
+          <opcode message="$(string._op_LocalStoreSession_Update)" name="LocalStoreSession_Update" value="119" symbol="_op_LocalStoreSession_Update" />
+          <opcode message="$(string._op_LocalStoreSession_Delete)" name="LocalStoreSession_Delete" value="120" symbol="_op_LocalStoreSession_Delete" />
+          <opcode message="$(string._op_LocalStoreSession_DropDatabase)" name="LocalStoreSession_DropDatabase" value="121" symbol="_op_LocalStoreSession_DropDatabase" />
+          <opcode message="$(string._op_LocalStoreSession_GetRecordCount)" name="LocalStoreSession_GetRecordCount" value="122" symbol="_op_LocalStoreSession_GetRecordCount" />
+          <opcode message="$(string._op_LocalStoreSession_CreateEnumerator)" name="LocalStoreSession_CreateEnumerator" value="123" symbol="_op_LocalStoreSession_CreateEnumerator" />
+          <opcode message="$(string._op_LocalStoreSession_GetResourceProvider)" name="LocalStoreSession_GetResourceProvider" value="124" symbol="_op_LocalStoreSession_GetResourceProvider" />
+          <opcode message="$(string._op_ResourceEnumerator_GetResourceType)" name="ResourceEnumerator_GetResourceType" value="125" symbol="_op_ResourceEnumerator_GetResourceType" />
+          <opcode message="$(string._op_ResourceEnumerator_GetCurrentRecord)" name="ResourceEnumerator_GetCurrentRecord" value="126" symbol="_op_ResourceEnumerator_GetCurrentRecord" />
+          <opcode message="$(string._op_ResourceEnumerator_MoveNext)" name="ResourceEnumerator_MoveNext" value="127" symbol="_op_ResourceEnumerator_MoveNext" />
+          <opcode message="$(string._op_ResourceEnumerator_SkipToEnd)" name="ResourceEnumerator_SkipToEnd" value="128" symbol="_op_ResourceEnumerator_SkipToEnd" />
+          <opcode message="$(string._op_ResourceEnumerator_Reset)" name="ResourceEnumerator_Reset" value="129" symbol="_op_ResourceEnumerator_Reset" />
+          <opcode message="$(string._op_Instance_CreateSession)" name="Instance_CreateSession" value="130" symbol="_op_Instance_CreateSession" />
+          <opcode message="$(string._op_Database_InstallTableDefinition)" name="Database_InstallTableDefinition" value="131" symbol="_op_Database_InstallTableDefinition" />
+          <opcode message="$(string._op_Database_OpenCursor)" name="Database_OpenCursor" value="132" symbol="_op_Database_OpenCursor" />
+          <opcode message="$(string._op_Session_CreateDatabase)" name="Session_CreateDatabase" value="133" symbol="_op_Session_CreateDatabase" />
+          <opcode message="$(string._op_Session_DeleteDatabase)" name="Session_DeleteDatabase" value="134" symbol="_op_Session_DeleteDatabase" />
+          <opcode message="$(string._op_Session_StartTransaction)" name="Session_StartTransaction" value="135" symbol="_op_Session_StartTransaction" />
+          <opcode message="$(string._op_Session_CommitTransaction)" name="Session_CommitTransaction" value="136" symbol="_op_Session_CommitTransaction" />
+          <opcode message="$(string._op_Session_AbortTransaction)" name="Session_AbortTransaction" value="137" symbol="_op_Session_AbortTransaction" />
+          <opcode message="$(string._op_Cursor_StartEditForInsert)" name="Cursor_StartEditForInsert" value="138" symbol="_op_Cursor_StartEditForInsert" />
+          <opcode message="$(string._op_Cursor_StartEditForUpdate)" name="Cursor_StartEditForUpdate" value="139" symbol="_op_Cursor_StartEditForUpdate" />
+          <opcode message="$(string._op_Cursor_AcceptChanges)" name="Cursor_AcceptChanges" value="140" symbol="_op_Cursor_AcceptChanges" />
+          <opcode message="$(string._op_Cursor_RejectChanges)" name="Cursor_RejectChanges" value="141" symbol="_op_Cursor_RejectChanges" />
+          <opcode message="$(string._op_Cursor_SetCurrentIndex)" name="Cursor_SetCurrentIndex" value="142" symbol="_op_Cursor_SetCurrentIndex" />
+          <opcode message="$(string._op_Cursor_MoveToIndex)" name="Cursor_MoveToIndex" value="143" symbol="_op_Cursor_MoveToIndex" />
+          <opcode message="$(string._op_Cursor_Move)" name="Cursor_Move" value="144" symbol="_op_Cursor_Move" />
+          <opcode message="$(string._op_Cursor_MoveFirst)" name="Cursor_MoveFirst" value="145" symbol="_op_Cursor_MoveFirst" />
+          <opcode message="$(string._op_Cursor_MoveLast)" name="Cursor_MoveLast" value="146" symbol="_op_Cursor_MoveLast" />
+          <opcode message="$(string._op_Cursor_Delete)" name="Cursor_Delete" value="147" symbol="_op_Cursor_Delete" />
+          <opcode message="$(string._op_Cursor_MakeKey)" name="Cursor_MakeKey" value="148" symbol="_op_Cursor_MakeKey" />
+          <opcode message="$(string._op_Cursor_Seek)" name="Cursor_Seek" value="149" symbol="_op_Cursor_Seek" />
+          <opcode message="$(string._op_Cursor_SeekKey)" name="Cursor_SeekKey" value="150" symbol="_op_Cursor_SeekKey" />
+          <opcode message="$(string._op_Cursor_GetColumnSize)" name="Cursor_GetColumnSize" value="151" symbol="_op_Cursor_GetColumnSize" />
+          <opcode message="$(string._op_Cursor_SetValue)" name="Cursor_SetValue" value="152" symbol="_op_Cursor_SetValue" />
+          <opcode message="$(string._op_Cursor_GetSession)" name="Cursor_GetSession" value="153" symbol="_op_Cursor_GetSession" />
+          <opcode message="$(string._op_Cursor_GetCount)" name="Cursor_GetCount" value="154" symbol="_op_Cursor_GetCount" />
+          <opcode message="$(string._op_RequestOperationContext_HandleRequest)" name="RequestOperationContext_HandleRequest" value="155" symbol="_op_RequestOperationContext_HandleRequest" />
+          <opcode message="$(string._op_TransactionalResourceProvider_StartTransaction)" name="TransactionalResourceProvider_StartTransaction" value="156" symbol="_op_TransactionalResourceProvider_StartTransaction" />
+          <opcode message="$(string._op_TransactionalResourceProvider_CommitTransaction)" name="TransactionalResourceProvider_CommitTransaction" value="157" symbol="_op_TransactionalResourceProvider_CommitTransaction" />
+          <opcode message="$(string._op_TransactionalResourceProvider_AbortTransaction)" name="TransactionalResourceProvider_AbortTransaction" value="158" symbol="_op_TransactionalResourceProvider_AbortTransaction" />
+        </opcodes>
+        <keywords>
+          <keyword message="$(string._keyword_NonMetric)" name="NonMetric" mask="0x1" symbol="_keyword_NonMetric" />
+          <keyword message="$(string._keyword_Metric)" name="Metric" mask="0x2" symbol="_keyword_Metric" />
+          <keyword message="$(string._keyword_Pii)" name="Pii" mask="0x4" symbol="_keyword_Pii" />
+        </keywords>
+        <maps>
+          <valueMap name="ChannelProtocol">
+            <map value="0" message="$(string.ChannelProtocol.HTTPS)" />
+            <map value="1" message="$(string.ChannelProtocol.netTcp)" />
+            <map value="2" message="$(string.ChannelProtocol.RNTBD)" />
+            <map value="255" message="$(string.ChannelProtocol.Invalid)" />
+          </valueMap>
+          <valueMap name="ScriptStats.ScriptOperationType">
+            <map value="0" message="$(string.ScriptStats.ScriptOperationType.StoredProcedure)" />
+            <map value="1" message="$(string.ScriptStats.ScriptOperationType.PreTrigger)" />
+            <map value="2" message="$(string.ScriptStats.ScriptOperationType.PostTrigger)" />
+            <map value="3" message="$(string.ScriptStats.ScriptOperationType.UserDefinedFunction)" />
+            <map value="255" message="$(string.ScriptStats.ScriptOperationType.Invalid)" />
+          </valueMap>
+          <valueMap name="SslHandshake.LastAsyncOperation">
+            <map value="0" message="$(string.SslHandshake.LastAsyncOperation.NotStarted)" />
+            <map value="1" message="$(string.SslHandshake.LastAsyncOperation.SchedulerEnqueue)" />
+            <map value="2" message="$(string.SslHandshake.LastAsyncOperation.ReadFromClient)" />
+          </valueMap>
+          <valueMap name="AuthType">
+            <map value="0" message="$(string.AuthType.NotSpecified)" />
+            <map value="1" message="$(string.AuthType.User)" />
+            <map value="2" message="$(string.AuthType.System)" />
+            <map value="255" message="$(string.AuthType.Invalid)" />
+          </valueMap>
+          <valueMap name="DefaultPathSpec">
+            <map value="0" message="$(string.DefaultPathSpec.AllHash)" />
+            <map value="1" message="$(string.DefaultPathSpec.AllRange)" />
+            <map value="2" message="$(string.DefaultPathSpec.NumberHashStringRange)" />
+            <map value="3" message="$(string.DefaultPathSpec.NumberRangeStringHash)" />
+            <map value="4" message="$(string.DefaultPathSpec.Excluded)" />
+          </valueMap>
+        </maps>
+        <templates>
+          <!-- MUST BE in sync with managed version of this event -->
+          <template tid="_template_ProcessInit">
+            <data name="processName" inType="win:UnicodeString" />
+            <data name="assemblyName" inType="win:UnicodeString" />
+            <data name="assemblyVersion" inType="win:UnicodeString" />
+            <data name="operatingSystemVersion" inType="win:UnicodeString" />
+            <data name="systemBootTimeUtc" inType="win:UnicodeString" />
+            <data name="physicalMemory" inType="win:UInt64" />
+            <data name="physicalProcessorPackages" inType="win:Int32" />
+            <data name="processorCores" inType="win:Int32" />
+            <data name="logicalProcessors" inType="win:Int32" />
+          </template>
+          <template tid="_template_Common">
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Message" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+          </template>
+          <template tid="_template_Failure">
+            <data name="HRESULTInt" inType="win:Int32" outType="xs:int" />
+            <data name="HRESULTHex" inType="win:UInt32" outType="win:HexInt32" />
+            <data name="Function" inType="win:UnicodeString" outType="xs:string" />
+            <data name="File" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Line" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="_template_BeginReplicaActivity">
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+          </template>
+          <template tid="_template_TransferActivity">
+            <data name="CurrentDocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="NextDocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Message" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="_template_Replica">
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="Message" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="_template_BackendBeginRequest">
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ResourceType" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="OperationType" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ResourceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Length" inType="win:UInt32" outType="win:unsignedInt" />
+            <data name="HasQuery" inType="win:Int32" outType="xs:int" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+          </template>
+          <template tid="_template_BackendEndRequest">
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ResourceType" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="OperationType" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ResourceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="HRESULTHex" inType="win:UInt32" outType="win:HexInt32" />
+            <data name="ResponseLength" inType="win:UInt32" outType="win:unsignedInt" />
+            <data name="Duration" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="HasQuery" inType="win:Int32" outType="xs:int" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="ConsistencyLevel" inType="win:Int32" outType="xs:int" />
+            <data name="RequestSessionToken" inType="win:AnsiString" outType="xs:string" />
+            <data name="ResponseSessionToken" inType="win:AnsiString" outType="xs:string" />
+            <data name="HasContinuation" inType="win:Int32" outType="xs:int" />
+            <data name="HasPreTrigger" inType="win:Int32" outType="xs:int" />
+            <data name="HasPostTrigger" inType="win:Int32" outType="xs:int" />
+            <data name="IsFeedUnfiltered" inType="win:Int32" outType="xs:int" />
+            <data name="IndexingDirective" inType="win:Int32" outType="xs:int" />
+            <data name="XDate" inType="win:UnicodeString" outType="xs:string" />
+            <data name="RetryAfterMilliseconds" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="MaxItemCount" inType="win:Int32" outType="xs:int" />
+            <data name="ActualItemCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ClientVersion" inType="win:UnicodeString" outType="xs:string" />
+            <data name="UserAgent" inType="win:UnicodeString" outType="xs:string" />
+            <data name="RequestLength" inType="win:UInt32" outType="win:unsignedInt" />
+            <data name="NetworkBucket" inType="win:Int32" outType="xs:int" />
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Region" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IpAddress" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ChannelProtocol" inType="win:UInt8" map="ChannelProtocol" />
+            <data name="RequestCharge" inType="win:Double" outType="xs:double" />
+            <data name="DatabaseRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="AuthType" inType="win:UInt8" map="AuthType" />
+            <data name="HasProfile" inType="win:Int32" outType="xs:int" />
+            <data name="TransportCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="ServiceFxCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="ScriptEngineHostCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="LocalStoreCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="IndexManagerCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="QueryPhysicalCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="BwTreeCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="UnknownCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="RequestUrlType" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="DefaultConsistencyLevel" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IsPrimary" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="ThroughputWeight" inType="win:Double" outType="xs:double" />
+            <data name="IsScriptChargeViolation" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="TTL" inType="win:Int32" outType="xs:int" />
+            <data name="TotalPersistedContentSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="TotalReplicatedContentSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ClockSkewAdjustedTimestamp" inType="win:UnicodeString" outType="xs:string" />
+            <data name="GlobalDatabaseAccountName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ResourceTokenUserRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IsBurstingRequest" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="SubStatusCode" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="PrepareTimeInNanoseconds" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="CommitTimeInNanoseconds" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="IndexTimeInNanoseconds" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="PartitionKeyRangeId" inType="win:AnsiString" outType="xs:string" />
+            <data name="GlobalCommittedLSN" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="IsChangeFeed" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="GlobalDatabasePartitionId" inType="win:GUID" outType="xs:GUID" />
+          </template>
+          <template tid="_template_BERequestAlert">
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ResourceType" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="OperationType" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ResourceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="HRESULTHex" inType="win:UInt32" outType="win:HexInt32" />
+            <data name="ResponseLength" inType="win:UInt32" outType="win:unsignedInt" />
+            <data name="Duration" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="HasQuery" inType="win:Int32" outType="xs:int" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="ConsistencyLevel" inType="win:Int32" outType="xs:int" />
+            <data name="RequestSessionToken" inType="win:AnsiString" outType="xs:string" />
+            <data name="ResponseSessionToken" inType="win:AnsiString" outType="xs:string" />
+            <data name="HasContinuation" inType="win:Int32" outType="xs:int" />
+            <data name="HasPreTrigger" inType="win:Int32" outType="xs:int" />
+            <data name="HasPostTrigger" inType="win:Int32" outType="xs:int" />
+            <data name="IsFeedUnfiltered" inType="win:Int32" outType="xs:int" />
+            <data name="IndexingDirective" inType="win:Int32" outType="xs:int" />
+            <data name="XDate" inType="win:UnicodeString" outType="xs:string" />
+            <data name="RetryAfterMilliseconds" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="MaxItemCount" inType="win:Int32" outType="xs:int" />
+            <data name="ActualItemCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ClientVersion" inType="win:UnicodeString" outType="xs:string" />
+            <data name="UserAgent" inType="win:UnicodeString" outType="xs:string" />
+            <data name="RequestLength" inType="win:UInt32" outType="win:unsignedInt" />
+            <data name="NetworkBucket" inType="win:Int32" outType="xs:int" />
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Region" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IpAddress" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ChannelProtocol" inType="win:UInt8" map="ChannelProtocol" />
+            <data name="RequestCharge" inType="win:Double" outType="xs:double" />
+            <data name="DatabaseRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="AuthType" inType="win:UInt8" map="AuthType" />
+            <data name="HasProfile" inType="win:Int32" outType="xs:int" />
+            <data name="TransportCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="ServiceFxCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="ScriptEngineHostCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="LocalStoreCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="IndexManagerCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="QueryPhysicalCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="BwTreeCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="UnknownCpu" inType="win:UInt64" outType="win:unsignedLong" />
+            <data name="RequestUrlType" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="DefaultConsistencyLevel" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IsPrimary" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="ThroughputWeight" inType="win:Double" outType="xs:double" />
+            <data name="IsScriptChargeViolation" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="TTL" inType="win:Int32" outType="xs:int" />
+            <data name="ClockSkewAdjustedTimestamp" inType="win:UnicodeString" outType="xs:string" />
+            <data name="GlobalDatabaseAccountName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ResourceTokenUserRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IsBurstingRequest" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="SubStatusCode" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="PrepareTimeInNanoseconds" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="CommitTimeInNanoseconds" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="IndexTimeInNanoseconds" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="PartitionKeyRangeId" inType="win:AnsiString" outType="xs:string" />
+            <data name="GlobalCommittedLSN" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="IsChangeFeed" inType="win:UInt8" outType="xs:unsignedByte" />
+          </template>
+          <template tid="_template_ReportQuotaInfo">
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="IsPrimary" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ResourceType" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="Quota" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="Usage" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IndexUsage" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DatabaseRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CommunicationAPIKind" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Region" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionKeyRangeId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DocumentCount" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="GlobalDatabaseAccountName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HasPartitionKeyDefinition" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="PartitionKeyRangeParentIds" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionKeyRangeWidth" inType="win:Double" outType="xs:double" />
+            <data name="IsStoreInitialized" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="SchemaVersion" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IndexingMode" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="IndexingSchemeVersion" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="AutoSplitEnabled" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="HardQuota" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ServiceName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ServiceState" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IsSharedThroughputCollection" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="IndexingFullFidelityEnabled" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="ShouldUsePolygonsSmallerThanAHemisphere" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="SupportSpatialLegacyCoordinates" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="IndexEncodingOptions" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="GlobalDatabasePartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="IsV2Store" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="IsMultipleWriteLocationsEnabled" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="OperationLogQuota" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="OperationLogUsage" inType="win:UInt32" outType="xs:unsignedInt" />
+          </template>
+          <!-- WARNING: THIS EVENT IS EXCLUSIVELY USED BY BILLING AND MONITORING TEAM (ALIAS: DOCDBMONITORING, PLEASE CHECK WITH THEM BEFORE EDITING AND
+                 PLEASE ADD THEM FOR ALL CODE REVIEWS RELATED TO IT -->
+          <template tid="_template_BillingReportQuotaInfo">
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="IsPrimary" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ResourceType" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="Quota" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="Usage" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IndexUsage" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DatabaseRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CommunicationAPIKind" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Region" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionKeyRangeId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DocumentCount" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="GlobalDatabaseAccountName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HasPartitionKeyDefinition" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="PartitionKeyRangeParentIds" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionKeyRangeWidth" inType="win:Double" outType="xs:double" />
+            <data name="OperationLogQuota" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="OperationLogUsage" inType="win:UInt32" outType="xs:unsignedInt" />
+          </template>
+          <template tid="_template_AutoScaleInfo">
+            <data name="CurrentTimestamp" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="CurrentUtilizationInPercentage" inType="win:Double" outType="xs:double" />
+            <data name="TargetUtilizationInPercentage" inType="win:Double" outType="xs:double" />
+            <data name="OfferThroughput" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="UserSpecifiedOfferThroughput" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="LastOfferReplaceTimestamp" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="OfferReplaceLagInSeconds" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="OfferOwnerRid" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="_template_WatchdogState">
+            <data name="State" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="MonitoredProcessId" inType="win:UInt32" outType="xs:unsignedInt" />
+          </template>
+          <template tid="_template_ModuleState">
+            <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ModuleState" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ModuleEvent" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ModuleEventReason" inType="win:UInt32" outType="xs:unsignedInt" />
+          </template>
+          <template tid="_template_ModuleHealth">
+            <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="HealthProperty" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HealthState" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="HealthDescription" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="_template_ReplicaHealth">
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="HealthProperty" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HealthState" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="HealthDescription" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="_template_MetricsReplicaEvent">
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="Component" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="SubEvent" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DetailInt" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="DetailString" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32" />
+          </template>
+          <template tid="_template_MetricsModuleEvent">
+            <data name="Component" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="SubEvent" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DetailInt" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="DetailString" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32" />
+          </template>
+          <template tid="_template_MetricsCollectionEvent">
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Component" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="SubEvent" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DetailInt" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="DetailString" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32" />
+          </template>
+          <template tid="_template_MetricsUnaggregatedReplicaEvent">
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="Component" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="SubEvent" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DetailInt" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="DetailString" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32" />
+          </template>
+          <template tid="_template_MetricsUnaggregatedModuleEvent">
+            <data name="Component" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="SubEvent" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DetailInt" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="DetailString" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32" />
+          </template>
+          <template tid="_template_MetricsUnaggregatedCollectionEvent">
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Component" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="SubEvent" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DetailInt" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="DetailString" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32" />
+          </template>
+          <template tid="_template_SqlQueryPiiEvent">
+            <data name="GlobalDatabaseAccountName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionKeyRangeId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="QueryText" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="_template_MetricsScriptStatsEvent">
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="CollectionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ScriptName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="OperationType" inType="win:UInt8" map="ScriptStats.ScriptOperationType" />
+            <data name="CRUDs" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Creates" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Reads" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Replaces" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Deletes" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="ReadFeeds" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Queries" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="RejectedCRUDs" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="CompileErrors" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="UnhandledExceptions" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Cancelations" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="DeserializeFailures" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="BlackListedScriptCalls" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="AreStoreOpsUsed" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="ScriptSizeChars" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ErrorStatusWithinScript" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="CPUCharge" inType="win:Int64" outType="xs:long" />
+            <data name="IOCharge" inType="win:Int64" outType="xs:long" />
+            <data name="ElapsedTimeMillisecs" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="HRESULT" inType="win:UInt32" outType="xs:HexInt32" />
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="JSQueries" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="ScriptOnlyCPUCharge" inType="win:Int64" outType="xs:long" />
+            <data name="Upserts" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CallCount" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="WarmupCpuCharge" inType="win:Int64" outType="xs:long" />
+          </template>
+          <template tid="_template_MetricsScriptStatsJSQueryEvent">
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="CollectionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ScriptName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CapturesTimeMillisecs" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="InitCharge" inType="win:Int64" outType="xs:long" />
+            <data name="ParseCharge" inType="win:Int64" outType="xs:long" />
+            <data name="ASTWalkCharge" inType="win:Int64" outType="xs:long" />
+            <data name="RewriteCharge" inType="win:Int64" outType="xs:long" />
+            <data name="CapturesErrors" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IsRewritten" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="Queries" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Chains" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Filters" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Maps" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Flattens" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Plucks" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="SortBy" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="_template_SqlQueryExecMetrics">
+            <!-- Misc -->
+            <data name="PartitionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="RoundTrips" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="FinalStatus" inType="win:UnicodeString" outType="xs:string" />
+            <data name="RequestPageSize" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="HitCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <!-- Query Shape -->
+            <data name="ShapeSignature" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="Signature" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="QueryLength" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ScalarExprCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="JoinCount" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="GroupByItemCount" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="OrderByItemCount" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="IndexLookup" inType="win:UnicodeString" outType="xs:string" />
+            <!-- Query Engine Metrics -->
+            <data name="TotalExecutionTimeMillis" inType="win:Double" outType="xs:double" />
+            <!-- Build Times -->
+            <data name="SqlCompileTimeMillis" inType="win:Double" outType="xs:double" />
+            <data name="LogicalPlanBuildTimeMillis" inType="win:Double" outType="xs:double" />
+            <data name="FilterPlanOptimizationTimeMillis" inType="win:Double" outType="xs:double" />
+            <data name="TermPlanBuildTimeMillis" inType="win:Double" outType="xs:double" />
+            <data name="PhysicalPlanBuildTimeMillis" inType="win:Double" outType="xs:double" />
+            <!-- Index -->
+            <data name="IndexType" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IndexVersion" inType="win:Double" outType="xs:double" />
+            <data name="IncludedTermCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ExcludedTermCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IdOrderedPostingCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ValueOrderedPostingCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IndexPageCount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IndexLookupTimeMillis" inType="win:Double" outType="xs:double" />
+            <data name="IndexLookupCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <!-- Resource Content Enumerator -->
+            <data name="LoadDocTimeMillis" inType="win:Double" outType="xs:double" />
+            <data name="LoadDocCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="LoadDocSize" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DocRetrievedCount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ParseDocTimeMillis" inType="win:Double" outType="xs:double" />
+            <data name="ParseDocCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="EnumDocCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <!-- Query Execution -->
+            <data name="EnumMoveNextTimeMillis" inType="win:Double" outType="xs:double" />
+            <data name="EnumMoveNextCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="CallUdfTimeMillis" inType="win:Double" outType="xs:double" />
+            <data name="CallUdfCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="CallSysFunTimeMillis" inType="win:Double" outType="xs:double" />
+            <data name="CallSysFunCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <!--  Output -->
+            <data name="WriteOutputDocTimeMillis" inType="win:Double" outType="xs:double" />
+            <data name="WriteOutputDocCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ResponseSize" inType="win:UInt32" outType="xs:unsignedInt" />
+            <!--  Composite JSON -->
+            <data name="IndexLookupPesCount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="QueryVMRuntimeStats" inType="win:UnicodeString" outType="xs:string" />
+            <data name="SpatialQueryCover" inType="win:UnicodeString" outType="xs:string" />
+            <!-- Query Charges -->
+            <data name="QueryCharge" inType="win:Double" outType="xs:double" />
+            <data name="QueryPhysicalCpu" inType="win:Int64" outType="win:long" />
+          </template>
+          <template tid="_template_MetricsDocAnalyzerEvent">
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Terms" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="InteriorTerms" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="LeafTerms" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="HashTerms" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="RangeTerms" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ArrayTerms" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="SpatialTerms" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="SingleArrayIndexTerms" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="MultipleArrayIndexTerms" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IndexingSchemeVersion" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="StringsGreaterThan256Bytes" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="StringsGreaterThan512Bytes" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="StringsGreaterThan1Kb" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="StringsGreaterThan2Kb" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="StringsGreaterThan4Kb" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="StringsGreaterThan8Kb" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="StringsGreaterThan16Kb" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="StringsGreaterThan100Bytes" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IsBsonSupported" inType="win:UInt8" outType="xs:unsignedByte" />
+          </template>
+          <template tid="_template_MetricsIndexingPolicyEvent">
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IncludedPaths" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="ExcludedPaths" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="IndexingMode" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IndexingSchemeVersion" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="DefaultPathSpec" inType="win:UInt8" map="DefaultPathSpec" />
+            <data name="AllHashCustomPaths" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="AllRangeCustomPaths" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="NumberHashStringRangeCustomPaths" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="NumberRangeStringHashCustomPaths" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="ExcludedCustomPaths" inType="win:UInt16" outType="xs:unsignedShort" />
+          </template>
+          <template tid="_template_MetricsCollectionIndexOperationStatsEvent">
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="TargetIndexingPolicyId" inType="win:Int64" outType="xs:long" />
+            <data name="TargetIndexingMode" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="IsTargetPolicyAutomatic" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="TargetIncludedPaths" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="TargetExcludedPaths" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="SourceIndexingMode" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="IsSourcePolicyAutomatic" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="SourceIncludedPaths" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="SourceExcludedPaths" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="OperationType" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IsOperationCompleted" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="CollectionPutType" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IsCollectionFrozen" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="DefaultTtl" inType="win:Int32" outType="xs:int" />
+            <data name="SourceIndexingSchemeVersion" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="TargetIndexingSchemeVersion" inType="win:UInt16" outType="xs:unsignedShort" />
+          </template>
+          <template tid="_template_MetricsSchemaContainerUpdateEvent">
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DocumentDepth" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Properties" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="PropertiesPerLevel" inType="win:UnicodeString" outType="xs:string" />
+            <data name="SchemaId" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="IsNewSchema" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="MemoryDelta" inType="win:Int32" outType="xs:int" />
+            <data name="UpdateDuration" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="CreatedBlobs" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="NoMatches" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="CompleteMatches" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="PartialMatches" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="MinDiffPercentage" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="MaxDiffPercentage" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="AvgDiffPercentage" inType="win:UInt8" outType="xs:unsignedByte" />
+          </template>
+          <template tid="_template_MetricsSchemaContainerStatsEvent">
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Schemas" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="FoldedSimilarSchemas" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="SizeInMemory" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="UpdateDuration" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="Levels" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="Buckets" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="BucketsPerLevel" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Blobs" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="BlobsPerLevel" inType="win:UnicodeString" outType="xs:string" />
+            <data name="MaxCodeMapSize" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="Properties" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="PropertiesPerLevel" inType="win:UnicodeString" outType="xs:string" />
+            <data name="OptionalProperties" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="MultiTypeProperties" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="StringTableCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="UpdateCalls" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="GetSchemaCalls" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="GetSchemasCalls" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="SerializeCalls" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DeserializeCalls" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="TimeSinceLastUpdate" inType="win:UInt64" outType="xs:unsignedLong" />
+          </template>
+          <template tid="_template_AlertReplicaEvent">
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="Component" inType="win:UnicodeString" outType="xs:string" />
+            <data name="SubEvent" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32" />
+          </template>
+          <template tid="_template_AlertModuleEvent">
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Component" inType="win:UnicodeString" outType="xs:string" />
+            <data name="SubEvent" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32" />
+          </template>
+          <template tid="_template_CommitDuration">
+            <data name="CommitDurationInMSec" inType="win:UInt64" outType="xs:unsignedLong" />
+          </template>
+          <template tid="_template_CRUDProgressNumber">
+            <data name="SequenceNumber" inType="win:Int64" outType="xs:long" />
+          </template>
+          <template tid="_template_GetQuotaInternal">
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="ResourceType" inType="win:Int32" outType="xs:int" />
+            <data name="MaxQuota" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="CurrentQuotaUsage" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IndexSize" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="QuotInfoMaxQuota" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="QuotInfoCurrentUsage" inType="win:UInt32" outType="xs:unsignedInt" />
+          </template>
+          <template tid="_template_ReplicaConfigurationRefreshed">
+            <data name="DatabaseAccountName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+          </template>
+          <template tid="_template_SslHandshakeAbandoned">
+            <data name="SocketCreatedTimestamp" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="SchannelTimeMillis" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="EnqueueTimeMillis" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="WaitingForClientMillis" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="LastAsyncOperation" inType="win:UInt8" map="SslHandshake.LastAsyncOperation" />
+            <data name="CurrentTimestamp" inType="win:UInt64" outType="xs:unsignedLong" />
+          </template>
+          <template tid="_template_NewRntbdChannelAcceptCompleted">
+            <data name="SocketCreatedTimestamp" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="SchannelTimeMillis" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="EnqueueTimeMillis" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="WaitingForClientSslMillis" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="WaitingForClientRntbdMillis" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="CurrentTimestamp" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="Result" inType="win:Int32" outType="win:HResult" />
+            <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="CipherAlgorithm" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="CipherStrength" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="HashAlgorithm" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="HashStrength" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="KeyExchangeAlgorithm" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="KeyExchangeStrength" inType="win:UInt32" outType="xs:unsignedInt" />
+          </template>
+          <template tid="_template_ReportOnDiskQuota">
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DocumentServiceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="IsPrimary" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="TotalUsageInMB" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="CRUDUsageInMB" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IndexUsageInMB" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="MaxCRUDLogicalQuotaInMB" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="CurrentIndexLogicalUsageInMB" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IsStoreInitialized" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="MaxCRUDLogicalQuotaHardLimitInMB" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="LogicalCRUDUsageInMB" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IsSharedThroughputCollection" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="IsV2Store" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="IsMultipleWriteLocationsEnabled" inType="win:UInt8" outType="xs:unsignedByte" />
+          </template>
+          <template tid="_template_BeginIndexUpdateDispatch">
+            <data name="SequenceNumber" inType="win:Int64" outType="xs:long" />
+            <data name="IsForRecovery" inType="win:UInt8" outType="xs:unsignedByte" />
+          </template>
+          <template tid="_template_EndIndexUpdateDispatch">
+            <data name="SequenceNumber" inType="win:Int64" outType="xs:long" />
+            <data name="ResourceTermsCompleted" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ResourceTermCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="OwnerId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="TermsCompletedSync" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IndexTerms" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="InvalidationTerms" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DurationMilliseconds" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="IsForRecovery" inType="win:UInt8" outType="xs:unsignedByte" />
+          </template>
+          <template tid="_template_BEFabricCallInfo">
+            <data name="component" inType="win:UnicodeString" outType="xs:string" />
+            <data name="fabricModule" inType="win:UnicodeString" outType="xs:string" />
+            <data name="fabricMethod" inType="win:UnicodeString" outType="xs:string" />
+            <data name="isSuccess" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32" />
+            <data name="durationInTicks" inType="win:UInt64" outType="xs:unsignedLong" />
+          </template>
+          <template tid="_template_ConnectionThrottled">
+            <data name="IpAddress" inType="win:Binary" length="128" outType="win:SocketAddress" />
+          </template>
+          <template tid="_template_NewReplicationChannel">
+            <data name="SocketCreatedTimestamp" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="SchannelTimeMillis" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="EnqueueTimeMillis" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="WaitingForPeerSslMillis" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="WaitingForPeerReplicationMillis" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="CurrentTimestamp" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="Result" inType="win:Int32" outType="win:HResult" />
+            <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="CipherAlgorithm" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="CipherStrength" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="HashAlgorithm" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="HashStrength" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="KeyExchangeAlgorithm" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="KeyExchangeStrength" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="PeerIpAddress" inType="win:Binary" length="128" outType="win:SocketAddress" />
+          </template>
+          <template tid="_template_MetricsRTTStatsEvent">
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="RTTInMicroseconds" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="RequestSentTime" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="RequestReceivedTime" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="ResponseSentTime" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="ResponseReceivedTime" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="LocalTimeOffsetInMicroseconds" inType="win:Int64" outType="xs:long" />
+            <data name="TargetTimeOffsetInMicroseconds" inType="win:Int64" outType="xs:long" />
+            <data name="AverageRTTInMicroseconds" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="LeastRTTInMicroseconds" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="CurrentIterationCount" inType="win:UInt64" outType="xs:unsignedLong" />
+          </template>
+          <template tid="_template_MetricsBackupEvent">
+            <data name="TimeTaken" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="Verb" inType="win:UnicodeString" outType="xs:string" />
+            <data name="StorageAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="RootResourceId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32" />
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="_template_SchedulerDelayEvent">
+            <data name="SubEvent" inType="win:UnicodeString" outType="xs:string" />
+            <data name="SchedulingDelayInMsec" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="SchedulingDelayThresholdInMsec" inType="win:UInt64" outType="xs:unsignedLong" />
+          </template>
+          <template tid="_template_ConnectionEvent">
+            <data name="Destination" inType="win:UnicodeString" outType="xs:string" />
+            <data name="HRESULT" inType="win:Int32" outType="xs:int" />
+          </template>
+          <template tid="_template_CosmosDBEndpoints">
+            <data name="Protocol" inType="win:UnicodeString" outType="xs:string" />
+            <data name="IP" inType="win:UnicodeString" outType="xs:string" />
+            <data name="InternalPort" inType="win:UInt16" outType="xs:unsignedShort" />
+            <data name="ExternalPort" inType="win:UInt16" outType="xs:unsignedShort" />
+          </template>
+          <template tid="_template_OfferThroughputInfo">
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="GlobalDatabaseAccountName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CommunicationAPIKind" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Region" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Tags" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ResourceUri" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ResourceGroup" inType="win:UnicodeString" outType="xs:string" />
+            <data name="OfferType" inType="win:UnicodeString" outType="xs:string" />
+            <data name="SubscriptionDisabled" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="IsRUpm" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="IsDatabaseAccountGeoEnabled" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="AllowRead" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="AllowWrite" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="IsSharedThroughputOffer" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="IsMultiMasterOffer" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="Throughput" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ReadRegionsCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DatabaseName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionName" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="_template_PartitionKeyRangeOfferThroughputInfo">
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="GlobalDatabaseAccountName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Region" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ResourceUri" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ResourceGroup" inType="win:UnicodeString" outType="xs:string" />
+            <data name="PartitionKeyRangeId" inType="win:AnsiString" outType="xs:string" />
+            <data name="IsSharedThroughputOffer" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="Throughput" inType="win:UInt32" outType="xs:unsignedInt" />
+          </template>
+          <template tid="_template_CosmosDBRequest">
+            <data name="GlobalDatabaseAccountName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="RegionalDatabaseAccountName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="Region" inType="win:UnicodeString" outType="xs:string" />
+            <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="SubStatusCode" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="IsExternal" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="APIType" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="OperationType" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ResourceType" inType="win:UnicodeString" outType="xs:string" />
+            <data name="RequestCharge" inType="win:Double" outType="xs:double" />
+            <data name="DatabaseRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionRid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DurationInMilliseconds" inType="win:UInt64" outType="win:unsignedLong" />
+          </template>
+          <template tid="_template_MetricsTimeToLiveStatsEvent">
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="CollectionId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DefaultTtl" inType="win:Int32" outType="xs:int" />
+            <data name="IsPrimary" inType="win:UInt8" outType="xs:unsignedByte" />
+            <data name="Backlog" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="NotFound" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="FalsePositive" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="DeletedCountDelta" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="ActualCount" inType="win:UInt32" outType="xs:unsignedInt" />
+            <data name="PartitionKeyRangeId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="ActualCountDelta" inType="win:Int32" outType="xs:int" />
+          </template>
+          <template tid="_template_MetricsGeoReplicationDelayEvent">
+            <data name="DelayInMsec" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="FederationId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="GlobalDatabaseAccountName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseAccount" inType="win:UnicodeString" outType="xs:string" />
+            <data name="RegionName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="_template_MetricsCommitCompleteDelayEvent">
+            <data name="CommitLsn" inType="win:Int64" outType="xs:long" />
+            <data name="CompleteLsn" inType="win:Int64" outType="xs:long" />
+            <data name="CommitCompleteDelayInMsec" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="PartitionId" inType="win:GUID" outType="xs:GUID" />
+            <data name="ReplicaId" inType="win:UInt64" outType="xs:unsignedLong" />
+            <data name="GlobalDatabaseAccountName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="DatabaseAccountId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="SubscriptionId" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+        </templates>
+      </provider>
+    </events>
+  </instrumentation>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="_event_ProcessInit" value="ProcessInit ProcessName %1, assemblyName %2, assemblyVersion %3, OperatingSystemVersion %4, systemBootTimeUtc %5, physicalMemory %6, physicalProcessorPackages %7, processorCores %8, logicalProcessors %9" />
+        <string id="_event_BackendBeginRequest" value="BeginRequest DocumentServiceId %1, ResourceType %2, OperationType %3, ResourceId %4, Length %5, HasQuery %6, PartitionId %7, ReplicaId %8" />
+        <string id="_event_BackendEndRequest" value="EndRequest DocumentServiceId %1, ResourceType %2, OperationType %3, ResourceId %4, StatusCode %5, HRESULTHex %6, ResponseLength %7, Duration %8, HasQuery %9, PartitionId %10, ReplicaId %11, ConsistencyLevel %12, RequestSessionToken %13, ResponseSessionToken %14, HasContinuation %15, HasPreTrigger %16, HasPostTrigger %17, IsFeedUnfiltered %18, IndexingDirective %19, XDate %20, RetryAfterMilliseconds %21, MaxItemCount %22, ActualItemCount %23, ClientVersion %24, UserAgent %25, RequestLength %26, NetworkBucket %27, SubscriptionId %28, Region %29, IpAddress %30, ChannelProtocol %31, RequestCharge %32, DatabaseRid %33, CollectionRid %34, AuthType %35, HasProfile %36, TransportCpu %37, ServiceFxCpu %38, ScriptEngineHostCpu %39, LocalStoreCpu %40, IndexManagerCpu %41, QueryEngineCpu %42, BwTreeCpu %43, UnknownCpu %44, RequestUrlType %45, DefaultConsistencyLevel %46, IsPrimary %47, ThroughputWeight %48, IsScriptChargeViolation %49, TTL %50, TotalPersistedContentSizeInBytes %51, TotalReplicatedContentSizeInBytes %52, ClockSkewAdjustedTimestamp %53, GlobalDatabaseAccountName %54, ResourceTokenUserRid %55, IsBurstingRequest %56, SubStatusCode %57, PrepareTimeInNanoseconds %58, CommitTimeInNanoseconds %59, IndexTimeInNanoseconds %60, PartitionKeyRangeId %61, GlobalCommittedLSN %62, IsChangeFeed %63, GlobalDatabasePartitionId %64" />
+        <string id="_event_BERequestAlert" value="EndRequest DocumentServiceId %1, ResourceType %2, OperationType %3, ResourceId %4, StatusCode %5, HRESULTHex %6, ResponseLength %7, Duration %8, HasQuery %9, PartitionId %10, ReplicaId %11, ConsistencyLevel %12, RequestSessionToken %13, ResponseSessionToken %14, HasContinuation %15, HasPreTrigger %16, HasPostTrigger %17, IsFeedUnfiltered %18, IndexingDirective %19, XDate %20, RetryAfterMilliseconds %21, MaxItemCount %22, ActualItemCount %23, ClientVersion %24, UserAgent %25, RequestLength %26, NetworkBucket %27, SubscriptionId %28, Region %29, IpAddress %30, ChannelProtocol %31, RequestCharge %32, DatabaseRid %33, CollectionRid %34, AuthType %35, HasProfile %36, TransportCpu %37, ServiceFxCpu %38, ScriptEngineHostCpu %39, LocalStoreCpu %40, IndexManagerCpu %41, QueryEngineCpu %42, BwTreeCpu %43, UnknownCpu %44, RequestUrlType %45, DefaultConsistencyLevel %46, IsPrimary %47, ThroughputWeight %48, IsScriptChargeViolation %49, TTL %50, ClockSkewAdjustedTimestamp %51, GlobalDatabaseAccountName %52, ResourceTokenUserRid %53, IsBurstingRequest %54, SubStatusCode %55, PrepareTimeInNanoseconds %56, CommitTimeInNanoseconds %57, IndexTimeInNanoseconds %58, PartitionKeyRangeId %59, GlobalCommittedLSN %60, IsChangeFeed %61" />
+        <string id="_event_ReportQuotaInfo" value="ReportQuotaInfo SubscriptionId %1, DocumentServiceId %2, DatabaseName %3, PartitionId %4, IsPrimary %5, ResourceType %6, Quota %7, DataUsage %8, IndexUsage %9, DatabaseRid %10, CollectionRid %11, CommunicationAPIKind %12, Region %13, CollectionName %14, PartitionKeyRangeId %15, DocumentCount %16, GlobalDatabaseAccountName %17, HasPartitionKeyDefinition %18, PartitionKeyRangeParentIds %19, PartitionKeyRangeWidth %20, IsStoreInitialized %21, SchemaVersion %22, IndexingMode %23, IndexingSchemeVersion %24, AutoSplitEnabled %25, HardQuota %26, ServiceName %27, ServiceState %28, IsSharedThroughputCollection %29, IndexingFullFidelityEnabled %30,  ShouldUsePolygonsSmallerThanAHemisphere %31, SupportSpatialLegacyCoordinates %32, IndexEncodingOptions %33, GlobalDatabasePartitionId %34, IsV2Store %35, IsMultipleWriteLocationsEnabled %36, OperationLogQuota %37, OperationLogUsage %38" />
+        <string id="_event_BillingReportQuotaInfo" value="BillingReportQuotaInfo SubscriptionId %1, DocumentServiceId %2, DatabaseName %3, PartitionId %4, IsPrimary %5, ResourceType %6, Quota %7, DataUsage %8, IndexUsage %9, DatabaseRid %10, CollectionRid %11, CommunicationAPIKind %12, Region %13, CollectionName %14, PartitionKeyRangeId %15, DocumentCount %16, GlobalDatabaseAccountName %17, HasPartitionKeyDefinition %18, PartitionKeyRangeParentIds %19, PartitionKeyRangeWidth %20, OperationLogQuota %21, OperationLogUsage %22" />
+        <string id="_event_AutoScaleInfo" value="AutoScaleInfo CurrentTimestamp %1, PartitionId %2, ReplicaId %3, CurrentUtilizationInPercentage %4, TargetUtilizationInPercentage %5, OfferThroughput %6, UserSpecifiedOfferThroughput %7, LastOfferReplaceTimestamp %8, OfferReplaceLagInSeconds %9, OfferOwnerRid %10" />
+        <string id="_event_WatchdogState" value="WatchdogState State %1, MonitoredProcessId %2" />
+        <string id="_event_ModuleState" value="ModuleState ProcessId %1, ModuleState %2, ModuleEvent %3, ModuleEventReason %4" />
+        <string id="_event_ModuleHealth" value="ModuleHealth ProcessId %1, HealthProperty %2, HealthState %3, HealthDescription %4" />
+        <string id="_event_ReplicaHealth" value="ReplicaHealth DocumentServiceId %1, PartitionId %2, ReplicaId %3, HealthProperty %4, HealthState %5, HealthDescription %6" />
+        <string id="_event_BeginReplicaActivity" value="Begin DocuemntServiceId %1, PartitionId %2, ReplicaId %3" />
+        <string id="_event_BEFabricCallInfo" value="BEFabricCallInfo component %1, fabricModule %2, fabricMethod %3, isSuccess %4, HRESULT %5, durationInTicks %6" />
+        <string id="_event_CommonDebug" value="%2 DocumentServiceId %1 PartitionId %3, ReplicaId %4" />
+        <string id="_event_CommonDebugInfo" value="%2 DocumentServiceId %1 PartitionId %3, ReplicaId %4" />
+        <string id="_event_Failure" value="FAILED HRESULT %1, Function %3, File %4, Line %5, DocumentServiceId %6" />
+        <string id="_event_MetricsReplicaEvent" value="MetricsReplicaEvent DocumentServiceId %1, PartitionId %2, ReplicaId %3, Component %4, SubEvent %5, DetailInt %6, DetailString %7, HRESULT %8" />
+        <string id="_event_MetricsModuleEvent" value="MetricsModuleEvent Component %1, SubEvent %2, DetailInt %3, DetailString %4, HRESULT %5" />
+        <string id="_event_MetricsCollectionEvent" value="MetricsCollectionEvent DocumentServiceId %1, CollectionId %2, Component %3, SubEvent %4, DetailInt %5, DetailString %6, HRESULT %7" />
+        <string id="_event_MetricsUnaggregatedReplicaEvent" value="MetricsReplicaEvent DocumentServiceId %1, PartitionId %2, ReplicaId %3, Component %4, SubEvent %5, DetailInt %6, DetailString %7, HRESULT %8" />
+        <string id="_event_MetricsUnaggregatedModuleEvent" value="MetricsModuleEvent Component %1, SubEvent %2, DetailInt %3, DetailString %4, HRESULT %5" />
+        <string id="_event_MetricsUnaggregatedCollectionEvent" value="MetricsCollectionEvent DocumentServiceId %1, CollectionId %2, Component %3, SubEvent %4, DetailInt %5, DetailString %6, HRESULT %7" />
+        <string id="_event_SqlQueryPiiEvent" value="SqlQueryPii GlobalDatabaseAccountName %1, DatabaseAccount %2, DatabaseName %3, CollectionName %4, PartitionKeyRangeId %5, QueryText %6" />
+        <string id="_event_MetricsScriptStatsEvent" value="ScriptStats PartitionId %1, ReplicaId %2, CollectionId %3, ScriptName %4, OperationType %5, CRUDs %6, Creates %7, Reads %8, Replaces %9, Deletes %10, ReadFeeds %11, Queries %12, RejectedCRUDs %13, CompileErrors %14, UnhandledExceptions %15, Cancelations %16, DeserializeFailures %17, BlackListedScriptCalls %18, AreStoreOpsUsed %19, ScriptSizeChars %20, ErrorStatusWithinScript %21, CPUCharge %22, IOCharge %23, ElapsedTimeMillisecs %24, HRESULT %25, DatabaseAccount %26, JSQueries %27, ScriptOnlyCPUCharge %28, Upserts %29, SubscriptionId %30, CallCount %31, WarmupCpuCharge %32" />
+        <string id="_event_MetricsScriptStatsJSQueryEvent" value="ScriptStats JSQuery PartitionId %1, ReplicaId %2, CollectionId %3, DatabaseAccount %4 ScriptName %5, CapturesTimeMillisecs %6 InitCharge %7 ParseCharge %8 ASTWalkCharge %9 RewriteCharge %10 CapturesErrors %11 IsRewritten %12 Queries %13 Chains %14 Filters %15 Maps %16 Flattens %17 Plucks %18 SortBy %19 SubscriptionId %20" />
+        <string id="_event_SqlQueryExecMetrics" value="SqlQueryExecution PartitionId %1, DatabaseAccount %2, CollectionId %3, RoundTrips %4, FinalStatus %5, RequestPageSize %6, HitCount %7, ShapeSignature %8, Signature %9, QueryLength %10, ScalarExprCount %11, JoinCount %11, GroupByItemCount %12, OrderByItemCount %13, IndexLookup %14, TotalExecutionTimeMillis %15, SqlCompileTimeMillis %16, LogicalPlanBuildTimeMillis %17, FilterPlanOptimizationTimeMillis %18, TermPlanBuildTimeMillis %19, PhysicalPlanBuildTimeMillis %20, IndexType %21, IndexVersion %22, IncludedTermCount %23, ExcludedTermCount %24, IdOrderedPostingCount %25, ValueOrderedPostingCount %26, IndexPageCount %27, IndexLookupTimeMillis %28, IndexLookupCount %29, LoadDocTimeMillis %30, LoadDocCount %31, LoadDocSize %32, DocRetrievedCount %33, ParseDocTimeMillis %34, ParseDocCount %35, EnumDocCount %36, EnumMoveNextTimeMillis %37, EnumMoveNextCount %38, CallUdfTimeMillis %39, CallUdfCount %40, CallSysFunTimeMillis %41, CallSysFunCount %42, WriteOutputDocTimeMillis %43, WriteOutputDocCount %44, ResponseSize %45, IndexLookupPesCount %46, QueryVMRuntimeStats %47, SpatialQueryCover %48, QueryCharge %49, QueryPhysicalCpu %50" />
+        <string id="_event_MetricsDocAnalyzerEvent" value="DocumentAnalyzerStats DatabaseAccount %1, CollectionId %2, Terms %3, InteriorTerms %4, LeafTerms %5, HashTerms %6, RangeTerms %7, ArrayTerms %8, SpatialTerms %9, SingleArrayIndexTerms %10, MultipleArrayIndexTerms %11 IndexingSchemeVersion %12 StringsGreaterThan256Bytes %13 StringsGreaterThan512Bytes %14 StringsGreaterThan1Kb %15 StringsGreaterThan2Kb %16 StringsGreaterThan4Kb %17 StringsGreaterThan8Kb %18 StringsGreaterThan16Kb %19 StringsGreaterThan100Bytes %20 IsBsonSupported %21" />
+        <string id="_event_MetricsIndexingPolicyEvent" value="IndexingPolicyStats DatabaseAccount %1, CollectionId %2, IncludedPaths %3, ExcludedPaths %4, IndexingMode %5, IndexingSchemeVersion %6, DefaultPathSpec %7, AllHashCustomPaths %8, AllRangeCustomPaths %9, NumberHashStringRangeCustomPaths %10, NumberRangeStringHashCustomPaths %11, ExcludedCustomPaths %12" />
+        <string id="_event_MetricsCollectionIndexOperationStatsEvent" value="CollectionIndexOperationStatsEvent PartitionId %1, ReplicaId %2, SubscriptionId %3, DatabaseAccount %4, CollectionId %5, TargetIndexingPolicyId %6, TargetIndexingMode %7, IsTargetPolicyAutomatic %8, TargetIncludedPaths = %9, TargetExcludedPaths %10, SourceIndexingMode %11, IsSourcePolicyAutomatic %12, SourceIncludedPaths %13, SourceExcludedPaths %14 OperationType %15 OperationComplete %16 CollectionPutType %17 IsCollectionFrozen %18 DefaultTtl %19 SourceIndexingSchemeVersion %20 TargetIndexingSchemeVersion %21" />
+        <string id="_event_MetricsSchemaContainerUpdateEvent" value="SchemaContainerUpdate PartitionId %1 ReplicaId %2 DatabaseAccount %3 DocumentDepth %4 PropertiesPerLevel %5 SchemaId %6 IsNewSchema %7 MemoryDelta %8 UpdateDuration %9 CreatedBlobs %10 NoMatches %11 CompleteMatches %12 PartialMatches %13 MinDiffPercentage %14 MaxDiffPercentage %15 AvgDiffPercentage %16" />
+        <string id="_event_MetricsSchemaContainerStatsEvent" value="SchemaContainerStats PartitionId %1 ReplicaId %2 DatabaseAccount %3 Schemas %4 FoldedSimilarSchemas %5 SizeInMemory %6 UpdateDuration %7 Levels %8 Buckets %9 BucketsPerLevel %10 Blobs %11 BlobsPerLevel %12 MaxCodeMapSize %13 Properties %14 PropertiesPerLevel %15 OptionalProperties %16 MultiTypeProperties %17 StringTableCount %18 UpdateCalls %19 GetSchemaCalls %20 GetSchemasCalls %21 SerializeCalls %22 DeserializeCalls %23 TimeSinceLastUpdate %24" />
+        <string id="_event_MetricsRTTStatsEvent" value="RTTStatsEvent PartitionId %1 ReplicaId %2 RTTInMicroseconds %3 RequestSentTime %4 RequestReceivedTime %5 ResponseSentTime %6 ResponseReceivedTime %7 LocalTimeOffsetInMicroseconds %8 TargetTimeOffsetInMicroseconds %9 AverageRTTInMicroseconds %10 LeastRTTInMicroseconds %11 CurrentIterationCount %12" />
+        <string id="_event_MetricsBackupEvent" value="BackupEvent TimeTaken %1 Verb %2 StorageAccount %3 RootResourceId %4 SubscriptionId %5 PartitionId %6 ReplicaId %7 ErrorCode %8 DatabaseAccount %9" />
+        <string id="_event_AlertModuleEvent" value="AlertModuleEvent DatabaseAccount %1, Component %2, SubEvent %3, HRESULT %4" />
+        <string id="_event_AlertReplicaEvent" value="AlertReplicaEvent DatabaseAccount %1, PartitionId %2, ReplicaId %3, Component %4, SubEvent %5, HRESULT %6" />
+        <string id="_event_Replica" value="Message %4, PartitionId %2, ReplicaId %3, DocumentServiceId %1" />
+        <string id="_event_TransferActivity" value="Activity Transfer from %1 to %2 Cause = %3" />
+        <string id="_event_CommitDuration" value="CommitDuration CommitDurationInMSec %1" />
+        <string id="_event_CRUDProgressNumber" value="CRUDProgressNumber SequenceNumber %1" />
+        <string id="_event_GetQuotaInternal" value="GetQuotaInternal PartitionId %1, ReplicaId %2, ResourceType %3, MaxQuota %4, CurrentQuotaUsage %5, IndexSize %6, QuotInfoMaxQuota %7, QuotInfoCurrentUsage %8" />
+        <string id="_event_ReplicaConfigurationRefreshed" value="ReplicaConfigurationRefreshed DatabaseAccountName %1, PartitionId %2, ReplicaId %3" />
+        <string id="_event_SslHandshakeAbandoned" value="SslHandshakeAbandoned SocketCreatedTimestamp %1, SChannelTimeMillis %2, EnqueueTimeMillis %3, WaitingForClientMillis %4, nLastAsyncOperation %5, CurrentTimestamp %6" />
+        <string id="_event_NewRntbdChannelAcceptCompleted" value="NewRntbdChannelAcceptCompleted SocketCreatedTimestamp %1, SChannelTimeMillis %2, EnqueueTimeMillis %3, WaitingForClientSslMillis %4, WaitingForClientRntbdMillis %5, CurrentTimestamp %6, Result %7, Protocol %8, CipherAlgorithm %9, CipherStrength %10, HashAlgorithm %11, HashStrength %12, ExchangeAlgorithm %13, ExchangeStrength %14" />
+        <string id="_event_ReportOnDiskQuota" value="ReportOnDiskQuota SubscriptionId %1, DocumentServiceId %2, PartitionId %3, ReplicaId %4, IsPrimary %5, TotalUsageInMB %6, CRUDUsageInMB %7, IndexUsageInMB %8, MaxCRUDLogicalQuotaInMB %9, CurrentIndexLogicalUsageInMB %10, IsStoreInitialized %11, MaxCRUDLogicalQuotaHardLimitInMB %12, LogicalCRUDUsageInMB= %13, IsSharedThroughputCollection %14, IsV2Store %15, IsMultipleWriteLocationsEnabled %16" />
+        <string id="_event_BeginIndexUpdateDispatch" value="BeginIndexUpdateDispatch SequenceNumber %1, IsForRecovery %2" />
+        <string id="_event_EndIndexUpdateDispatch" value="EndIndexUpdateDispatch LSN %1, ResourceTermsCompleted %2, ResourceTermCount %3, OwnerId %4, TermsCompletedSync %5, IndexTerms %6, InvalidationTerms %7, Duration %8, IsForRecovery %9" />
+        <string id="_event_ConnectionThrottled" value="ConnectionThrottled IP %1" />
+        <string id="_event_NewReplicationChannelAcceptCompleted" value="NewReplicationChannelAcceptCompleted SocketCreatedTimestamp %1, SChannelTimeMillis %2, EnqueueTimeMillis %3, WaitingForPeerSslMillis %4, WaitingForPeerReplicationMillis %5, CurrentTimestamp %6, Result %7, Protocol %8, CipherAlgorithm %9, CipherStrength %10, HashAlgorithm %11, HashStrength %12, ExchangeAlgorithm %13, ExchangeStrength %14, PeerIP %15" />
+        <string id="_event_NewReplicationChannelConnectCompleted" value="NewReplicationChannelConnectCompleted SocketCreatedTimestamp %1, SChannelTimeMillis %2, EnqueueTimeMillis %3, WaitingForPeerSslMillis %4, WaitingForPeerReplicationMillis %5, CurrentTimestamp %6, Result %7, Protocol %8, CipherAlgorithm %9, CipherStrength %10, HashAlgorithm %11, HashStrength %12, ExchangeAlgorithm %13, ExchangeStrength %14, PeerIP %15" />
+        <string id="_event_ConnectionEvent" value="ConnectionEvent Destination %1, HRESULT %2" />
+        <string id="_event_CosmosDBEndpoints" value="CosmosDB Endpoint Protocol %1, IP %2, InternalPort %3, ExternalPort %4" />
+        <string id="_event_OfferThroughputInfo" value="OfferThroughput SubscriptionId %1, DatabaseAccount %2, GlobalDatabaseAccountName %3, CollectionRid %4, CommunicationAPIKind %5, Region %6, Tags %7, ResourceUri %8, ResourceGroup %9, OfferType %10, SubscriptionDisabled %11, IsRUpm %12, IsDatabaseAccountGeoEnabled %13, AllowRead %14, AllowWrite %15, IsSharedThroughputOffer %16, IsMultiMasterOffer %17, Throughput %18, ReadRegionsCount %19, DatabaseName %20, CollectionName %21" />
+        <string id="_event_PartitionKeyRangeOfferThroughputInfo" value="PartitionKeyRangeOfferThroughputInfo SubscriptionId %1, DatabaseAccount %2, GlobalDatabaseAccountName %3, DatabaseName %4, CollectionName %5, CollectionRid %6, Region %7, ResourceUri %8, ResourceGroup %9, PartitionKeyRangeId %10, IsSharedThroughputOffer %11, Throughput %12" />
+        <string id="_event_SchedulerDelayEvent" value="SchedulerDelayEvent SubEvent %1, SchedulingDelayInMsec %2 SchedulingDelayThresholdInMsec %3" />
+        <string id="_event_MetricsTimeToLiveStatsEvent" value="TimeToLiveStatsEvent PartitionId %1, ReplicaId %2, SubscriptionId %3, DatabaseAccount %4, CollectionId %5, DefaultTtl %6, IsPrimary %7, Backlog %8, NotFound %9, FalsePositive %10, DeletedCountDelta %11, ActualCount %12, PartitionKeyRangeId %13, ActualCountDelta %14" />
+        <string id="_event_CosmosDBRequest" value="CosmosDBRequest GlobalDatabaseAccountName %1 RegionalDatabaseAccountName %2 SubscriptionId %3 Region %4 StatusCode %5 SubStatusCode %6 ErrorCode %7 IsExternal %8 APIType %9 DatabaseName %10 CollectionName %11 ExternalOperationType %12 ExternalResourceType %13 RequestCharge %14 DatabaseRid %15 CollectionRid %16 DurationInMilliseconds %17" />
+        <string id="_event_MetricsGeoReplicationDelayEvent" value="MetricsGeoReplicationDelayEvent DelayInMsec %1, PartitionId %2, ReplicaId %3, FederationId %4, GlobalDatabaseAccountName %5, DatabaseAccount %6, RegionName %7, SubscriptionId %8" />
+        <string id="_event_MetricsCommitCompleteDelayEvent" value="MetricsCommitCompleteDelayEvent CommitLsn %1, CompleteLsn %2, CommitCompleteDelayInMsec %3, PartitionId %4, ReplicaId %5, GlobalDatabaseAccountName %6, DatabaseAccountId %7, SubscriptionId %8" />
+        <string id="_keyword_NonMetric" value="NonMetric keyword " />
+        <string id="_keyword_Metric" value="Metric keyword " />
+        <string id="_keyword_Pii" value="Pii keyword " />
+        <string id="_op_Cursor_AcceptChanges" value="Cursor_AcceptChanges operation " />
+        <string id="_op_Cursor_Delete" value="Cursor_Delete operation " />
+        <string id="_op_Cursor_GetColumnSize" value="Cursor_GetColumnSize operation " />
+        <string id="_op_Cursor_GetCount" value="Cursor_GetCount operation " />
+        <string id="_op_Cursor_GetSession" value="Cursor_GetSession operation " />
+        <string id="_op_Cursor_MakeKey" value="Cursor_MakeKey operation " />
+        <string id="_op_Cursor_Move" value="Cursor_Move operation " />
+        <string id="_op_Cursor_MoveFirst" value="Cursor_MoveFirst operation " />
+        <string id="_op_Cursor_MoveLast" value="Cursor_MoveLast operation " />
+        <string id="_op_Cursor_MoveToIndex" value="Cursor_MoveToIndex operation " />
+        <string id="_op_Cursor_RejectChanges" value="Cursor_RejectChanges operation " />
+        <string id="_op_Cursor_Seek" value="Cursor_Seek operation " />
+        <string id="_op_Cursor_SeekKey" value="Cursor_SeekKey operation " />
+        <string id="_op_Cursor_SetCurrentIndex" value="Cursor_SetCurrentIndex operation " />
+        <string id="_op_Cursor_SetValue" value="Cursor_SetValue operation " />
+        <string id="_op_Cursor_StartEditForInsert" value="Cursor_StartEditForInsert operation " />
+        <string id="_op_Cursor_StartEditForUpdate" value="Cursor_StartEditForUpdate operation " />
+        <string id="_op_Database_InstallTableDefinition" value="Database_InstallTableDefinition operation " />
+        <string id="_op_Database_OpenCursor" value="Database_OpenCursor operation " />
+        <string id="_op_Generic" value="Generic operation " />
+        <string id="_op_Instance_CreateSession" value="Instance_CreateSession operation " />
+        <string id="_op_LocalStoreProvider_CreateSession" value="LocalStoreProvider_CreateSession operation " />
+        <string id="_op_LocalStoreProvider_Dispose" value="LocalStoreProvider_Dispose operation " />
+        <string id="_op_LocalStoreProvider_Open" value="LocalStoreProvider_Open operation " />
+        <string id="_op_LocalStoreSession_AbortTransaction" value="LocalStoreSession_AbortTransaction operation " />
+        <string id="_op_LocalStoreSession_CommitTransaction" value="LocalStoreSession_CommitTransaction operation " />
+        <string id="_op_LocalStoreSession_CreateEnumerator" value="LocalStoreSession_CreateEnumerator operation " />
+        <string id="_op_LocalStoreSession_Delete" value="LocalStoreSession_Delete operation " />
+        <string id="_op_LocalStoreSession_DropDatabase" value="LocalStoreSession_DropDatabase operation " />
+        <string id="_op_LocalStoreSession_GetRecordCount" value="LocalStoreSession_GetRecordCount operation " />
+        <string id="_op_LocalStoreSession_GetResourceProvider" value="LocalStoreSession_GetResourceProvider operation " />
+        <string id="_op_LocalStoreSession_Insert" value="LocalStoreSession_Insert operation " />
+        <string id="_op_LocalStoreSession_Read" value="LocalStoreSession_Read operation " />
+        <string id="_op_LocalStoreSession_Replace" value="LocalStoreSession_Replace operation " />
+        <string id="_op_LocalStoreSession_StartTransaction" value="LocalStoreSession_StartTransaction operation " />
+        <string id="_op_LocalStoreSession_Update" value="LocalStoreSession_Update operation " />
+        <string id="_op_RequestOperationContext_HandleRequest" value="RequestOperationContext_HandleRequest operation " />
+        <string id="_op_ResourceEnumerator_GetCurrentRecord" value="ResourceEnumerator_GetCurrentRecord operation " />
+        <string id="_op_ResourceEnumerator_GetResourceType" value="ResourceEnumerator_GetResourceType operation " />
+        <string id="_op_ResourceEnumerator_MoveNext" value="ResourceEnumerator_MoveNext operation " />
+        <string id="_op_ResourceEnumerator_Reset" value="ResourceEnumerator_Reset operation " />
+        <string id="_op_ResourceEnumerator_SkipToEnd" value="ResourceEnumerator_SkipToEnd operation " />
+        <string id="_op_ResourceProvider_Create" value="ResourceProvider_Create operation " />
+        <string id="_op_ResourceProvider_Delete" value="ResourceProvider_Delete operation " />
+        <string id="_op_ResourceProvider_Read" value="ResourceProvider_Read operation " />
+        <string id="_op_ResourceProvider_ReadCollection" value="ResourceProvider_ReadCollection operation " />
+        <string id="_op_ResourceProvider_Replace" value="ResourceProvider_Replace operation " />
+        <string id="_op_ResourceProvider_Update" value="ResourceProvider_Update operation " />
+        <string id="_op_ResourceSerializer_Load" value="ResourceSerializer_Load operation " />
+        <string id="_op_ResourceSerializer_Save" value="ResourceSerializer_Save operation " />
+        <string id="_op_ResourceSerializer_SaveFeed" value="ResourceSerializer_SaveFeed operation " />
+        <string id="_op_Session_AbortTransaction" value="Session_AbortTransaction operation " />
+        <string id="_op_Session_CommitTransaction" value="Session_CommitTransaction operation " />
+        <string id="_op_Session_CreateDatabase" value="Session_CreateDatabase operation " />
+        <string id="_op_Session_DeleteDatabase" value="Session_DeleteDatabase operation " />
+        <string id="_op_Session_StartTransaction" value="Session_StartTransaction operation " />
+        <string id="_op_TransactionalResourceProvider_AbortTransaction" value="TransactionalResourceProvider_AbortTransaction operation " />
+        <string id="_op_TransactionalResourceProvider_CommitTransaction" value="TransactionalResourceProvider_CommitTransaction operation " />
+        <string id="_op_TransactionalResourceProvider_StartTransaction" value="TransactionalResourceProvider_StartTransaction operation " />
+        <string id="_task_AsyncOperationCallback" value="AsyncOperationCallback task " />
+        <string id="_task_AsyncOperationContext" value="AsyncOperationContext task " />
+        <string id="_task_BatchCommitAck" value="BatchCommitAck task " />
+        <string id="_task_BatchEnqueAck" value="BatchEnqueAck task " />
+        <string id="_task_CopyContextEnumerator" value="CopyContextEnumerator task " />
+        <string id="_task_CopyStateEnumerator" value="CopyStateEnumerator task " />
+        <string id="_task_Esent_Cursor" value="Esent_Cursor task " />
+        <string id="_task_Esent_Database" value="Esent_Database task " />
+        <string id="_task_Esent_Instance" value="Esent_Instance task " />
+        <string id="_task_Esent_Session" value="Esent_Session task " />
+        <string id="_task_ExceptionHandler" value="ExceptionHandler task " />
+        <string id="_task_Generic" value="Generic task " />
+        <string id="_task_GenericOperationContext" value="GenericOperationContext task " />
+        <string id="_task_LocalStoreHelpers" value="LocalStoreHelpers task " />
+        <string id="_task_LocalStoreProvider" value="LocalStoreProvider task " />
+        <string id="_task_LocalStoreResourceProvider" value="LocalStoreResourceProvider task " />
+        <string id="_task_LocalStoreSession" value="LocalStoreSession task " />
+        <string id="_task_MasterStoreProvider" value="MasterStoreProvider task " />
+        <string id="_task_OrderedReplicator" value="OrderedReplicator task " />
+        <string id="_task_ReplicaStateMachine" value="ReplicaStateMachine task " />
+        <string id="_task_ReplicationBatch" value="ReplicationBatch task " />
+        <string id="_task_ReplicationProxy" value="ReplicationProxy task " />
+        <string id="_task_RequestOperationContext" value="RequestOperationContext task " />
+        <string id="_task_ResourceRecordEnumerator" value="ResourceRecordEnumerator task " />
+        <string id="_task_ResourceSerializer" value="ResourceSerializer task " />
+        <string id="_task_SecondaryOperationProcessor" value="SecondaryOperationProcessor task " />
+        <string id="_task_ServerStoreProvider" value="ServerStoreProvider task " />
+        <string id="_task_ServiceModule" value="ServiceModule task " />
+        <string id="_task_StatefulServiceFactory" value="StatefulServiceFactory task " />
+        <string id="_task_StatefulServiceReplica" value="StatefulServiceReplica task " />
+        <string id="_task_TombstonePurger" value="TombstonePurger task " />
+        <string id="_task_TransactionalResourceProvider" value="TransactionalResourceProvider task " />
+        <string id="_task_Transport_Channel_Processor" value="Transport_Channel_Processor task " />
+        <string id="_task_Transport_Channel_Wrapper" value="Transport_Channel_Wrapper task " />
+        <string id="_task_Transport_Listener_Wrapper" value="Transport_Listener_Wrapper task " />
+        <string id="_task_Transport_Listener" value="Transport_Listener task " />
+        <string id="_task_Transport_TransportMessage" value="Transport_TransportMessage task " />
+        <string id="_task_ScriptEngine" value="Script engine task " />
+        <string id="_task_IndexManager" value="IndexManager task " />
+        <string id="_task_RequestMessage" value="RequestMessage task " />
+        <string id="_task_Authorizer" value="Authorizer task " />
+        <string id="_task_LocalStoreFileProvider" value="LocalstoreFileProvider task " />
+        <string id="_task_BackupManager" value="BackupManager task " />
+        <string id="_task_FileUploader" value="FileUploader task " />
+        <string id="_task_HttpClient" value="HttpClient task " />
+        <string id="_task_HttpService" value="HttpService task " />
+        <string id="_task_Purger" value="Resource purger task " />
+        <string id="_task_BlobClient" value="BlobClient task " />
+        <string id="_task_PerformanceCounters" value="PerformanceCounters task" />
+        <string id="_task_HttpListener" value="HttpListener task" />
+        <string id="_task_HttpChannel" value="HttpChannel task" />
+        <string id="_task_ResponseMessage" value="ResponseMessage task" />
+        <string id="_task_TimeProvider" value="TimeProvider" />
+        <string id="_task_BackgroundCompressor" value="BackgroundIndexCompressor task" />
+        <string id="_task_IndexBuilder" value="IndexBuilder task" />
+        <string id="_task_StructuralIndex" value="StructuralIndex task" />
+        <string id="_task_SecondaryIndex" value="SecondaryIndex task" />
+        <string id="_task_IndexingPolicy" value="IndexingPolicy task" />
+        <string id="_task_ResourceContentProvider" value="ResourceContentProvider task" />
+        <string id="_task_AsyncTaskQueue" value="Async Task Queue task " />
+        <string id="_task_SystemResourceManager" value="System Resource Manager task" />
+        <string id="_task_TraceFromScript" value="Trace From Script task " />
+        <string id="_task_ResourceQuotaManager" value="Resource Quota Manager" />
+        <string id="_task_BwTreeStore" value="BwTree Store" />
+        <string id="_task_LazyIndexProcessor" value="LazyIndexProcessor" />
+        <string id="_task_RateLimiter" value="Rate Limiter" />
+        <string id="_task_ReplicaConfigurationManager" value="Replica Configuration Manager" />
+        <string id="_task_ReplicaConfiguration" value="Replica Configuration" />
+        <string id="_task_AsyncWriterLock" value="Async Writer Lock" />
+        <string id="_task_StandardScheduler" value="Standard Scheduler" />
+        <string id="_task_MachineConfiguration" value="Machine Configuration" />
+        <string id="_task_IndexingHelper" value="Indexing Helper" />
+        <string id="_task_ProcessMonitor" value="Process Monitor" />
+        <string id="_task_ServiceHostWatchdog" value="ServiceHost Watchdog" />
+        <string id="_task_DocDbWatchdog" value="DocDbWatchdog" />
+        <string id="_task_ClientWWSChannelWrapper" value="Client WWS ChannelWrapper" />
+        <string id="_task_CryptUtil" value="Crypt Util" />
+        <string id="_task_CriticalSection" value="Critical Section" />
+        <string id="_task_XML" value="XML" />
+        <string id="_task_Chakra" value="Chakra" />
+        <string id="_task_MemoryContext" value="Memory Context" />
+        <string id="_task_NodeMatcher" value="Node Matcher" />
+        <string id="_task_Test" value="Test" />
+        <string id="_task_BinaryReaderWriter" value="Binary Reader Writer" />
+        <string id="_task_JsonReaderWriter" value="Json Reader Writer" />
+        <string id="_task_JsonRewriter" value="Json Rewriter" />
+        <string id="_task_HeapMemoryManager" value="Heap Memory Manager" />
+        <string id="_task_NameValueCollection" value="Name Value Collection" />
+        <string id="_task_TimeoutManager" value="Timeout Manager" />
+        <string id="_task_UmsScheduler" value="Ums Scheduler" />
+        <string id="_task_Configuration" value="Configuration" />
+        <string id="_task_FabricOperationData" value="Fabric Operation Data" />
+        <string id="_task_StringResult" value="String Result" />
+        <string id="_task_TraceProvider" value="Trace Provider" />
+        <string id="_task_TransportResponseMessage" value="Transport Response Message" />
+        <string id="_task_ResourceCursor" value="Resource Cursor" />
+        <string id="_task_BitEncoding" value="Bit Encoding" />
+        <string id="_task_BwTree" value="BwTree" />
+        <string id="_task_BwTreeFlashManager" value="BwTreeFlashManager" />
+        <string id="_task_BwTreeCacheMgr" value="BwTreeCacheManager" />
+        <string id="_task_BwTreeMappingTable" value="BwTreeMappingTable" />
+        <string id="_task_BwTreeClock" value="BwTreeClock" />
+        <string id="_task_BwTreeLSS" value="BwTreeLSS" />
+        <string id="_task_BwTreeFileStream" value="BwTreeFileStream" />
+        <string id="_task_BwTreeLssGC" value="BwTreeGarbageCollector" />
+        <string id="_task_FabricReplicator" value="FabricReplicator" />
+        <string id="_task_GenericFailureInjection" value="GenericFailureInjection" />
+        <string id="_task_IntersectPlan" value="IntersectPlan" />
+        <string id="_task_InvertedIndex" value="InvertedIndex" />
+        <string id="_task_PhysicalInvertedIndex" value="PhysicalInvertedIndex" />
+        <string id="_task_LogicalInvertedIndex" value="LogicalInvertedIndex" />
+        <string id="_task_ScanPlan" value="ScanPlan" />
+        <string id="_task_InvertedIndexReader" value="InvertedIndexReader" />
+        <string id="_task_UnionPlan" value="UnionPlan" />
+        <string id="_task_FileIOScheduler" value="FileIOScheduler" />
+        <string id="_task_JetIndexComponent" value="DiskIndexComponent" />
+        <string id="_task_IndexSegment" value="IndexSegment" />
+        <string id="_task_JetIndexComponentReader" value="DiskIndexComponentReader" />
+        <string id="_task_MemIndexComponent" value="MemIndexComponent" />
+        <string id="_task_MemIndexComponentReader" value="MemIndexComponentReader" />
+        <string id="_task_TermPostingHelper" value="TermPostingHelper" />
+        <string id="_task_BloomFilter" value="BloomFilter" />
+        <string id="_task_NotifyProgressSequencer" value="NotifyProgressSequencer" />
+        <string id="_task_FileSystemUtils" value="FileSystemUtils" />
+        <string id="_task_TcpTransport" value="TcpTransport" />
+        <string id="_task_IndexEncoder" value="IndexEncoder" />
+        <string id="_task_QueryIL" value="QueryIL" />
+        <string id="_task_QueryRuntime" value="QueryRuntime" />
+        <string id="_task_SqlLang" value="SqlLang" />
+        <string id="_task_StorageDiagnostics" value="StorageDiagnostics" />
+        <string id="_task_BwTreePhysIdxMgr" value="BwTreePhysicalIndexManager" />
+        <string id="_task_AsyncReaderWriterLock" value="AsyncReaderWriterLock" />
+        <string id="_task_ReIndexer" value="ReIndexer" />
+        <string id="_task_LocalStoreAccessProvider" value="LocalStoreAccessProvider" />
+        <string id="_task_LocalStoreTable" value="LocalStoreTable" />
+        <string id="_task_LocalStoreTransaction" value="LocalStoreTransaction" />
+        <string id="_task_MessageQueue_TcpListenProcessor" value="MessageQueue_TcpListenProcessor" />
+        <string id="_task_MessageQueue_TransportManager" value="MessageQueue_TransportManager" />
+        <string id="_task_LocalStoreReferentialIntegrityManager" value="LocalStoreReferentialIntegrityManager" />
+        <string id="_task_StoreProvider" value="StoreProvider" />
+        <string id="_task_DocumentClient" value="DocumentClient" />
+        <string id="_task_MessageQueue_ReliableMessaging" value="MessageQueue_ReliableMessaging" />
+        <string id="_task_JavaScriptLang" value="JavaScriptLang" />
+        <string id="_task_Replicator" value="Replicator" />
+        <string id="_task_AsyncOperationContextBase" value="AsyncOperationContextBase" />
+        <string id="_task_FabricServiceManagement" value="FabricServiceManagement" />
+        <string id="_task_ReplicatedStore" value="ReplicatedStore" />
+        <string id="_task_ExpiredResourcePurger" value="ExpiredResourcePurger" />
+        <string id="_task_Topology" value="Topology" />
+        <string id="_task_SchemaInference" value="SchemaInference" />
+        <string id="_task_WinHttpClient" value="WinHttpClient" />
+        <string id="_task_UniqueIndex" value="UniqueIndex" />
+        <string id="_task_Split" value="Split" />
+        <string id="_task_OperationLogPurger" value="OperationLogPurger" />
+        <string id="ChannelProtocol.HTTPS" value="HTTPS" />
+        <string id="ChannelProtocol.netTcp" value="net.Tcp" />
+        <string id="ChannelProtocol.RNTBD" value="RNTBD" />
+        <string id="ChannelProtocol.Invalid" value="Invalid" />
+        <string id="ScriptStats.ScriptOperationType.StoredProcedure" value="StoredProcedure" />
+        <string id="ScriptStats.ScriptOperationType.PreTrigger" value="PreTrigger" />
+        <string id="ScriptStats.ScriptOperationType.PostTrigger" value="PostTrigger" />
+        <string id="ScriptStats.ScriptOperationType.UserDefinedFunction" value="UserDefinedFunction" />
+        <string id="ScriptStats.ScriptOperationType.Invalid" value="Invalid" />
+        <string id="SslHandshake.LastAsyncOperation.NotStarted" value="NotStarted" />
+        <string id="SslHandshake.LastAsyncOperation.SchedulerEnqueue" value="SchedulerEnqueue" />
+        <string id="SslHandshake.LastAsyncOperation.ReadFromClient" value="ReadFromClient" />
+        <string id="AuthType.NotSpecified" value="NotSpecified" />
+        <string id="AuthType.User" value="User" />
+        <string id="AuthType.System" value="System" />
+        <string id="AuthType.Invalid" value="Invalid" />
+        <string id="DefaultPathSpec.AllHash" value="AllHash" />
+        <string id="DefaultPathSpec.AllRange" value="AllRange" />
+        <string id="DefaultPathSpec.NumberHashStringRange" value="NumberHashStringRange" />
+        <string id="DefaultPathSpec.NumberRangeStringHash" value="NumberRangeStringHash" />
+        <string id="DefaultPathSpec.Excluded" value="Excluded" />
+      </stringTable>
+    </resources>
+  </localization>
+</instrumentationManifest>

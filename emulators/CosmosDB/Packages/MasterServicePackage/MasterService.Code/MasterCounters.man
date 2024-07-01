@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <instrumentation>
+    <counters xmlns="http://schemas.microsoft.com/win/2005/12/counters" schemaVersion="1.1">
+      <provider callback="custom" applicationIdentity="D:\work\vizualize\code\vz-api\emulators\cosmosdb\Packages\MasterServicePackage\MasterService.Code\DocumentDB.Master.exe" providerType="userMode" providerGuid="{9cab5f03-0333-4977-86f7-84bc17fc5db3}" symbol="ServiceFxPerformanceCountersProvider">
+        <counterSet guid="{084942f5-a0c8-4876-bb94-f7cf3630fdd6}" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet" name="DocDB Master" description="DocDB Master Lookup Service Performance Counters" symbol="ServiceFxCounterSet" instances="multipleAggregate">
+          <counter id="2" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageRequestReplicationTime" name="Average Request Replication Time" description="Average time it takes to replicate a request" type="perf_average_timer" baseID="3" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="3" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageRequestReplicationTimeBase" name="Average Request Replication Time Base" description="Average time it takes to replicate a request  Base" type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="4" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.Requests" name="Requests/sec" description="User Requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="5" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.RequestsWithUserErrors" name="Requests with User Errors/sec" description="Requests with a user error (4xx code) per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="6" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.RequestsWithSystemErrors" name="Requests with System Errors/sec" description="Requests with a user error (5xx code) per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="7" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageTriggerRequestsDuration" name="Average Trigger Requests Duration" description="Average Duration of a Trigger Request" type="perf_average_timer" baseID="8" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="8" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageTriggerRequestsDurationBase" name="Average Trigger Requests Duration Base" description="Average Duration of a Trigger Request Base" type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="9" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.CurrentActiveRequests" name="Current Active Requests" description="Current Active Requests" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="reference" />
+            </counterAttributes>
+          </counter>
+          <counter id="10" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageExecuteScriptRequestsDuration" name="Average ExecuteScript Requests Duration" description="Average Duration of a ExecuteScript Request" type="perf_average_timer" baseID="11" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="11" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageExecuteScriptRequestsDurationBase" name="Average ExecuteScript Requests Duration Base" description="Average Duration of a ExecuteScript Request Base" type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="12" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageDeleteRequestDuration" name="Average DELETE Request Duration" description="Average Duration of a DELETE Request" type="perf_average_timer" baseID="13" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="13" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageDeleteRequestDurationBase" name="Average DELETE Request Duration Base" description="Average Duration of a DELETE Request Base" type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="14" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.DeleteRequests" name="DELETE Requests/sec" description="DELETE Requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="15" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageGetRequestDuration" name="Average GET Request Duration" description="Average Duration of a GET Request" type="perf_average_timer" baseID="16" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="16" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageGetRequestDurationBase" name="Average GET Request Duration Base" description="Average Duration of a GET Request Base" type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="17" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.GetRequests" name="GET Requests/sec" description="GET Requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="18" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AveragePatchRequestDuration" name="Average PATCH Request Duration" description="Average Duration of a PATCH Request" type="perf_average_timer" baseID="19" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="19" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AveragePatchRequestDurationBase" name="Average PATCH Request Duration Base" description="Average Duration of a PATCH Request Base" type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="20" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.PatchRequests" name="PATCH Requests/sec" description="PATCH Requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="21" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AveragePostRequestDuration" name="Average POST Request Duration" description="Average Duration of a POST Request" type="perf_average_timer" baseID="22" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="22" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AveragePostRequestDurationBase" name="Average POST Request Duration Base" description="Average Duration of a POST Request Base" type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="23" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.PostRequests" name="POST Requests/sec" description="POST Requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="24" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AveragePutRequestDuration" name="Average PUT Request Duration" description="Average Duration of a PUT Request" type="perf_average_timer" baseID="25" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="25" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AveragePutRequestDurationBase" name="Average PUT Request Duration Base" description="Average Duration of a PUT Request Base" type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="26" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.PutRequests" name="PUT Requests/sec" description="PUT Requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="27" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageRequestDuration" name="Average Request Duration" description="Average Duration of a Request" type="perf_average_timer" baseID="28" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="28" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageRequestDurationBase" name="Average Request Duration Base" description="Average Duration of a Request Base" type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="29" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.CurrentTcpTransportConnections" name="Current TCP Transport Connections" description="Current TCP Transport Connections" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="reference" />
+            </counterAttributes>
+          </counter>
+          <counter id="30" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.CurrentTcpTransportBuffersAllocated" name="Current TCP Transport Buffers Allocated" description="Current TCP Transport Buffers Allocated" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="reference" />
+            </counterAttributes>
+          </counter>
+          <counter id="31" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.TcpTransportBufferGetsFromGlobalPool" name="TCP Transport Buffer Pool Gets/sec" description="TCP transport requests to dequeue buffers from global pool per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="32" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.TcpTransportBufferAllocations" name="TCP Transport Buffer Allocations/sec" description="TCP transport buffer allocations per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="33" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageExecuteUDFRequestsDuration" name="Average Execute User Defined Function Requests Duration" description="Average Duration of Execute User Defined Function Request" type="perf_average_timer" baseID="34" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="34" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.AverageExecuteUDFRequestsDurationBase" name="Average Execute User Defined Function Requests Duration Base" description="Average Duration of Execute User Defined Function Request Base" type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="35" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ActiveBwTreeInstances" name="Active BwTree Instances" description="Total number of active BwTree instances." type="perf_counter_rawcount" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="36" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.SslHandshakesAbandoned" name="SSL Handshakes abandoned/sec" description="SSL handshakes abandoned per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="37" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.EseCompactionCount" name="Ese compaction count" description="Number of successful Ese compaction count" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="38" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.FabricActivityDuration" name="Fabric Activity Duration" description="Average Duration of Fabric Activity" type="perf_average_timer" baseID="39" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="39" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.FabricActivityDurationBase" name="Fabric Activity Duration Base" description="Average Duration of Fabric Activity Base" type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="40" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.RIOCompletions" name="RIO Completions processed/sec" description="Number of RIO Completions processed per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="41" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.RIODequeueCompletionCalls" name="RIODequeueCompletion calls/sec" description="Number of calls to RIODequeueCompletion per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="42" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.RIONotifications" name="RIO Notifications/sec" description="Number of RIO Notifications per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="43" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.QueueTransport_ConnectionClosuresDueToPoolCap" name="Queue Transport Connection Closures Due To Pool Cap/s" description="Queue transport connection closures due to pool cap per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="44" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ProcessCpuBudgetInCycles" name="Process CpuBudget InCycles" description="Cpu Cycles per second budget for process" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="45" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ProcessCpuConsumedInCycles" name="Process CpuConsumed InCycles" description="Cpu Cycles per second consumed by process" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="46" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ProcessCpuConsumedInPercentage" name="Process CpuConsumed InPercentage" description="Cpu Cycles consumed by process as percentage of its budget" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="47" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.SystemTaskCpuBudgetInCycles" name="SystemTask CpuBudget InCycles" description="Cpu Cycles per second budget for SystemTasks" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="48" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.SystemTaskCpuConsumedInCycles" name="SystemTask CpuConsumed InCycles" description="Cpu Cycles per second consumed by SystemTasks" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="49" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.SystemTaskCpuConsumedInPercentage" name="SystemTask CpuConsumed InPercentage" description="Cpu Cycles consumed by SystemTasks as percentage of its budget" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="50" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ProcessCpuThrottleLevel" name="Process CPU Current Throttle Level" description="Process Current throttle level for CPU resource" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="51" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ProcessIOPSBudget" name="Process IOPSBudget" description="IOPS budget for process" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="52" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ProcessIOPSConsumed" name="Process IOPSConsumed InCycles" description="IOPS consumed by process" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="53" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ProcessIOPSConsumedInPercentage" name="Process IOPSConsumed InPercentage" description="IOPS consumed by process as percentage of its budget" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="54" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.SystemTaskIOPSBudget" name="SystemTask IOPSBudget InCycles" description="IOPS per second budget for SystemTasks" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="55" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.SystemTaskIOPSConsumed" name="SystemTask IOPSConsumed InCycles" description="IOPS consumed by SystemTasks" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="56" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.SystemTaskIOPSConsumedInPercentage" name="SystemTask IOPSConsumed InPercentage" description="IOPS consumed by SystemTasks as percentage of its budget" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="57" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ProcessIOPSThrottleLevel" name="Process IOPS Current Throttle Level" description="Process Current throttle level for IOPS resource" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="58" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ProcessDiskBwBudget" name="Process Disk Bandwidth Budget" description="Disk Bandwidth budget for process" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="59" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ProcessDiskBwConsumed" name="Process Disk Bandwidth Consumed InBlocks" description="Disk Bandwidth consumed by process" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="60" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ProcessDiskBwConsumedInPercentage" name="Process Disk Bandwidth InPercentage" description="Disk Bandwidth consumed by process as percentage of its budget" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="61" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.SystemTaskDiskBwBudget" name="SystemTask Disk Bandwidth Budget InBlocks" description="Disk Bandwidth per second budget for SystemTasks" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="62" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.SystemTaskDiskBwConsumed" name="SystemTask Disk Bandwidth Consumed InBlocks" description="Disk Bandwidth consumed by SystemTasks" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="63" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.SystemTaskDiskBwConsumedInPercentage" name="SystemTask Disk Bandwidth Consumed InPercentage" description="Disk Bandwidth consumed by SystemTasks as percentage of its budget" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="64" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.ServiceFxCounterSet.ProcessDiskBwThrottleLevel" name="Process Disk Bandwidth Current Throttle Level" description="Process Current throttle level for Disk Bandwidth resource" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+        </counterSet>
+        <counterSet guid="{d6198e7e-da6f-4fd2-9db1-685adb41c263}" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet" name="DocDB Master Replica Counters" description="DocDB Master Service Replica Performance Counters" symbol="MasterReplicaCounterSet" instances="multipleAggregate">
+          <counter id="1" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.CurrentThrottleLevel" name="Current Throttle Level" description="Current Throttle Level For The Replica" type="perf_counter_rawcount" detailLevel="standard" aggregate="avg" defaultScale="1">
+          </counter>
+          <counter id="2" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.CPUPercentage" name="CPU Percentage" description="CPU Percentage Consumed" type="perf_large_raw_fraction" aggregate="avg" detailLevel="standard" baseID="245" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="3" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.PercentageConstant" name="Percentage Constant" description="This counter stores Constant Value but does not display" type="perf_raw_base" aggregate="avg" detailLevel="standard">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="4" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.IOPSConsumed" name="IOPS Consumed" description="IOPS Consumed" type="perf_large_raw_fraction" aggregate="avg" detailLevel="standard" baseID="245" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="5" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.CommittedBytes" name="Memory Commited Bytes" description="Memory Commited Bytes" type="perf_counter_large_rawcount" aggregate="avg" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="6" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LazyIndexingRate" name="Lazy Indexing Rate(Terms/sec)" description="Number of terms indexed in lazy mode per second." type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="7" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ConsistentIndexingRate" name="Consistent Indexing Rate(Terms/sec)" description="Number of terms indexed in consistent mode per second." type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="8" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LazyIndexingBacklog" name="Lazy Indexer Backlog" description="Number of LSNs yet to be processed by lazy indexer." type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="9" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.RequestsWithUserErrors" name="Requests with User Errors/sec" description="Requests with a non-throttling user error (4xx code other than 429) per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="10" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.RequestsWithSystemErrors" name="Requests with System Errors/sec" description="Requests with a user error (5xx code) per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="11" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.CreateRequests" name="Create Requests/sec" description="Create Requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="12" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.PatchRequests" name="PATCH Requests/sec" description="PATCH Requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="13" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.GetRequests" name="GET Requests/sec" description="GET Requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="14" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.DeleteRequests" name="DELETE Requests/sec" description="DELETE Requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="15" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.PutRequests" name="PUT Requests/sec" description="PUT Requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="16" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.RequestsWithThrottlingErrors" name="Requests with Throttling Errors/sec" description="Requests with a throttling error (429 code) per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="17" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.TombstonesProcessed" name="Tombstones Processed/sec" description="Tombstone records processed by purger per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="18" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.CurrentTombstoneBacklog" name="Current Tombstone Backlog" description="Current Tombstone Backlog" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="19" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeConsolidatesPerSecLazy" name="BwTree Page Consolidations/sec (Lazy)" description="Number of Bw-tree page consolidations per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="20" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeAbortedConsolidatesPerSecLazy" name="BwTree Page Aborted Consolidations/sec (Lazy)" description="Number of aborted Bw-tree page consolidations per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="21" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFailedConsolidatesPerSecLazy" name="BwTree Page Failed Consolidations/sec (Lazy)" description="Number of failed Bw-tree page consolidations per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="22" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeSplitsPerSecLazy" name="BwTree Page Splits/sec (Lazy)" description="Number of Bw-tree page splits per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="23" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFailedSplitsPerSecLazy" name="BwTree Page Failed Splits/sec (Lazy)" description="Number of failed Bw-tree page splits per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="24" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreePageDeletesPerSecLazy" name="BwTree Page Deletes/sec (Lazy)" description="Number of Bw-tree page deletes per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="25" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFailedPageDeletesPerSecLazy" name="BwTree Page Failed Deletes/sec (Lazy)" description="Number of failed Bw-tree page delete operations per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="26" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreePageMergesPerSecLazy" name="BwTree Page Merges/sec (Lazy)" description="Number of Bw-tree page merges per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="27" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFailedPageMergesPerSecLazy" name="BwTree Page Failed Merges/sec (Lazy)" description="Number of failed Bw-tree page merge operations per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="28" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreePatchesPerSecLazy" name="BwTree Patch Operations/sec (Lazy)" description="Number of Bw-tree patch operations per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="29" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeInsertsPerSecLazy" name="BwTree Insert Operations/sec (Lazy)" description="Number of Bw-tree insert operations per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="30" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeUpdatesPerSecLazy" name="BwTree Update Operations/sec (Lazy)" description="Number of Bw-tree update operations per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="31" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeDeletesPerSecLazy" name="BwTree Delete Operations/sec (Lazy)" description="Number of Bw-tree delete operations per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="32" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeSeeksPerSecLazy" name="BwTree Seek Operations/sec (Lazy)" description="Number of Bw-tree seek operations per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="33" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeScanRowsPerSecLazy" name="BwTree Scan Rows Returned/sec (Lazy)" description="Number of Bw-tree scan rows returned per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="34" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeSoftPageSwapoutsPerSecLazy" name="BwTree Soft Page Swapouts/sec (Lazy)" description="Number of soft Bw-tree page swap-outs per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="35" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeHardPageSwapoutsPerSecLazy" name="BwTree Hard Page Swapouts/sec (Lazy)" description="Number of hard Bw-tree page swap-outs per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="36" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFlushRequestsPerSecLazy" name="BwTree Flush Buffer Flushes/sec (Lazy)" description="Number of Bw-tree flush buffer flush operations per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="37" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeSyncFlashReadIoLazyLazy" name="BwTree Synch Flash Reads/Sec (Lazy)" description="Number of Bw-tree synchronous flash read IOs per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="38" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeAsyncFlashReadIoLazy" name="BwTree Asynch Flash Reads/Sec (Lazy)" description="Number of Bw-tree asynchronous flash read IOs per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="39" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreePageRelocationsPerSecLazy" name="BwTree GC Pages Relocated/sec (Lazy)" description="Number of pages relocated by the Bw-tree garbage collector per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="40" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGcFreeSpaceGainedPerSecondLazy" name="BwTree GC Free Space Gained /sec (Lazy)" description="Free space in bytes gained by the GC per sec (Lazy)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="41" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeCurrentUsedSpaceLazy" name="BwTree Current Used Bytes (Lazy)" description="Number of log-structured storage used bytes (Lazy)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="42" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeCurrentMemoryUsageLazy" name="BwTree Memory Usage (Lazy)" description="Current memory used by the Bw-tree instance (Lazy)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="43" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeCurrentPageCountLazy" name="BwTree Current Page Count (Lazy)" description="Number of Bw-tree pages (Lazy)" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="44" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreePendedOperationsLazy" name="BwTree Current Number of Pended Ops (Lazy)" description="Number of Bw-tree pended operations (Lazy)" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="45" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeSoftMemoryLimitLazy" name="BwTree Soft Memory Threshold (Lazy)" description="Current Bw-Tree soft-memory threshold (Lazy)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="46" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeHardMemoryLimitLazy" name="BwTree Hard Memory Threshold (Lazy)" description="Current Bw-Tree hard-memory threshold (Lazy)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="47" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeHardMaxFileSizeLazy" name="BwTree Maximum LSS File Size (Lazy)" description="Current Bw-Tree LSS hard maximum file size (Lazy)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="48" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.MergeHoldoutsPerSecLazy" name="Inverted index merge holdouts found/sec (Lazy)" description="Inverted index merge holdouts found per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="49" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.Requests" name="Requests/sec" description="Successfully-completed requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="50" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ExecuteDurableScripts" name="Execute Durable Script Requests/sec" description="Execute durable script requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="51" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ExecuteTSQLScripts" name="Execute TSQL Script Requests/sec" description="Execute TSQL script requests per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="52" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ResourcePurgerRate" name="Resource Purger Rate(Resources/sec)" description="Number of resources purged by resource purger per second." type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="53" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.CurrentIOPSLimit" name="Current IOPS Limit" description="Current IOPS Limit for user requests" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="54" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.CurrentCPURateLimit" name="Current CPURate Limit" description="Current CPURate Limit for user requests" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="55" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.MinIOPSLimit" name="Min IOPS Limit" description="Minumum IOPS Limit for user requests" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="56" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.MaxIOPSLimit" name="Max IOPS Limit" description="Maximum IOPS Limit for user requests" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="57" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.MinCpuRateLimit" name="Min CPURate Limit" description="Minimum CPURate Limit for user requests" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="58" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.MaxCpuRateLimit" name="Max CPURate Limit" description="Maximum CPURate Limit for user requests" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="59" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SpareIOPSLimit" name="Spare IOPS Limit" description="Spare IOPS Limit for background tasks" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="60" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SpareCpuLimit" name="Spare CPURate Limit" description="Spare CPURate Limit for background tasks" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="61" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BackupIORate" name="Backup IO Rate" description="IO Rate of backup background task" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="62" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.AverageIOPSUtilization" name="Average IOPS Utilization" description="Average IOPS used by user requests" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="63" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.AverageCPURateUtilization" name="Average CPURate Utilization" description="Average CPURate used by user requests" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="64" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeConsolidatesPerSecConsistent" name="BwTree Page Consolidations/sec (Consistent)" description="Number of Bw-tree page consolidations per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="65" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeAbortedConsolidatesPerSecConsistent" name="BwTree Page Aborted Consolidations/sec (Consistent)" description="Number of aborted Bw-tree page consolidations per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="66" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFailedConsolidatesPerSecConsistent" name="BwTree Page Failed Consolidations/sec (Consistent)" description="Number of failed Bw-tree page consolidations per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="67" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeSplitsPerSecConsistent" name="BwTree Page Splits/sec (Consistent)" description="Number of Bw-tree page splits per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="68" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFailedSplitsPerSecConsistent" name="BwTree Page Failed Splits/sec (Consistent)" description="Number of failed Bw-tree page splits per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="69" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreePageDeletesPerSecConsistent" name="BwTree Page Deletes/sec (Consistent)" description="Number of Bw-tree page deletes per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="70" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFailedPageDeletesPerSecConsistent" name="BwTree Page Failed Deletes/sec (Consistent)" description="Number of failed Bw-tree page delete operations per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="71" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreePageMergesPerSecConsistent" name="BwTree Page Merges/sec (Consistent)" description="Number of Bw-tree page merges per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="72" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFailedPageMergesPerSecConsistent" name="BwTree Page Failed Merges/sec (Consistent)" description="Number of failed Bw-tree page merge operations per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="73" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreePatchesPerSecConsistent" name="BwTree Patch Operations/sec (Consistent)" description="Number of Bw-tree patch operations per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="74" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeInsertsPerSecConsistent" name="BwTree Insert Operations/sec (Consistent)" description="Number of Bw-tree insert operations per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="75" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeUpdatesPerSecConsistent" name="BwTree Update Operations/sec (Consistent)" description="Number of Bw-tree update operations per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="76" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeDeletesPerSecConsistent" name="BwTree Delete Operations/sec (Consistent)" description="Number of Bw-tree delete operations per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="77" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeSeeksPerSecConsistent" name="BwTree Seek Operations/sec (Consistent)" description="Number of Bw-tree seek operations per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="78" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeScanRowsPerSecConsistent" name="BwTree Scan Rows Returned/sec (Consistent)" description="Number of Bw-tree scan rows returned per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="79" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeSoftPageSwapoutsPerSecConsistent" name="BwTree Soft Page Swapouts/sec (Consistent)" description="Number of soft Bw-tree page swap-outs per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="80" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeHardPageSwapoutsPerSecConsistent" name="BwTree Hard Page Swapouts/sec (Consistent)" description="Number of hard Bw-tree page swap-outs per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="81" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFlushRequestsPerSecConsistent" name="BwTree Flush Buffer Flushes/sec (Consistent)" description="Number of Bw-tree flush buffer flush operations per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="82" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeSyncFlashReadIoConsistentConsistent" name="BwTree Synch Flash Reads/Sec (Consistent)" description="Number of Bw-tree synchronous flash read IOs per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="83" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeAsyncFlashReadIoConsistent" name="BwTree Asynch Flash Reads/Sec (Consistent)" description="Number of Bw-tree asynchronous flash read IOs per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="84" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreePageRelocationsPerSecConsistent" name="BwTree GC Pages Relocated/sec (Consistent)" description="Number of pages relocated by the Bw-tree garbage collector per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="85" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGcFreeSpaceGainedPerSecondConsistent" name="BwTree GC Free Space Gained /sec (Consistent)" description="Free space in bytes gained by the GC per sec (Consistent)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="86" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeCurrentUsedSpaceConsistent" name="BwTree Current Used Bytes (Consistent)" description="Number of log-structured storage used bytes (Consistent)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="87" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeCurrentMemoryUsageConsistent" name="BwTree Memory Usage (Consistent)" description="Current memory used by the Bw-tree instance (Consistent)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="88" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeCurrentPageCountConsistent" name="BwTree Current Page Count (Consistent)" description="Number of Bw-tree pages (Consistent)" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="89" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreePendedOperationsConsistent" name="BwTree Current Number of Pended Ops (Consistent)" description="Number of Bw-tree pended operations (Consistent)" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="90" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeSoftMemoryLimitConsistent" name="BwTree Soft Memory Threshold (Consistent)" description="Current Bw-Tree soft-memory threshold (Consistent)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="91" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeHardMemoryLimitConsistent" name="BwTree Hard Memory Threshold (Consistent)" description="Current Bw-Tree hard-memory threshold (Consistent)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="92" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeHardMaxFileSizeConsistent" name="BwTree Maximum LSS File Size (Consistent)" description="Current Bw-Tree LSS hard maximum file size (Consistent)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="93" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.MergeHoldoutsPerSecConsistent" name="Inverted index merge holdouts found/sec (Consistent)" description="Inverted index merge holdouts found per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="94" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.IndexTermHashCollisionsConsistent" name="Inverted index term hash collisions found/sec (Consistent)" description="Inverted index term hash collisions found per second (consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="95" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.IndexTermHashCollisionsLazy" name="Inverted index term hash collisions found/sec (Lazy)" description="Inverted index term hash collisions found per second (lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="96" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryAverageRoundTrips" name="SQL Query Average Round Trips" description="The average number of round trips per SQL query." type="perf_average_bulk" detailLevel="standard" baseID="97" defaultScale="1" />
+          <counter id="97" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryAverageRoundTripsBase" name="SQL Query Average Round Trips Base" description="The average number of round trips per SQL query base." type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="98" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryAverageIndexHitPercentage" name="SQL Query Average Index Hit Percentage" description="The average percentage of hits compared to number of retrieved documents for indexed SQL queries." type="perf_average_bulk" detailLevel="standard" baseID="99" defaultScale="1" />
+          <counter id="99" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryAverageIndexHitPercentageBase" name="SQL Query Average Index Hit Percentage Base" description="The average percentage of hits compared to number of retrieved documents for indexed SQL queries base." type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="100" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryAverageScanHitPercentage" name="SQL Query Average Scan Hit Percentage" description="The average percentage of hits compared to number of retrieved documents for scanned SQL queries." type="perf_average_bulk" detailLevel="standard" baseID="101" defaultScale="1" />
+          <counter id="101" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryAverageScanHitPercentageBase" name="SQL Query Average Scan Hit Percentage Base" description="The average percentage of hits compared to number of retrieved documents for scanned SQL queries base." type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="102" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryAverageRetrievedDocuments" name="SQL Query Average Retrieved Document Count" description="The average number of retrieved documents per SQL query." type="perf_average_bulk" detailLevel="standard" baseID="103" defaultScale="1" />
+          <counter id="103" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryAverageRetrievedDocumentsBase" name="SQL Query Average Retrieved Document Count Base" description="The average number of retrieved documents per SQL query base." type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="104" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryAverageIndexTermLookups" name="SQL Query Average Index Term Lookup Count" description="The average number of index terms looked per SQL query." type="perf_average_bulk" detailLevel="standard" baseID="105" defaultScale="1" />
+          <counter id="105" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryAverageIndexTermLookupsBase" name="SQL Query Average Index Term Lookup Count Base" description="The average number of index terms looked per SQL query base." type="perf_average_base" detailLevel="standard" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="106" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryPrimaryKeyLookups" name="SQL Query Primary Key Lookup Count" description="Number of SQL queries that utilized primary key lookup." type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="107" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryScanLookups" name="SQL Query Scan Lookup Count" description="Number of SQL queries that utilized scan lookup." type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="108" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SqlQueryIndexLookups" name="SQL Query Index Lookup Count" description="Number of SQL queries that utilized inverted index lookup." type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="109" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ScriptCRUDRequests" name="Script CRUD Requests" description="Script CRUD requests from script" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="110" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ScriptRejectedCRUDRequests" name="Script Rejected CRUD Requests" description="Script CRUD requests from script that were rejected" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="111" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ScriptCompileErrors" name="Script Compile Errors" description="Script compile errors" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="112" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ScriptDeserializationErrors" name="Script Deserialize Failures" description="Script deserialize failures" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="113" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ScriptsCancelled" name="Script Cancelled Scripts" description="Script Cancelled scripts" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="114" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BlacklistedScriptAttempts" name="Script Attemps to Call a Blacklisted Script" description="Script Attemps to call a blacklisted script" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="115" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ScriptElapsedTimeMillisecs" name="Script Time to Run" description="The time to run scripts" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="116" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.AverageIndexTermsPerDocument" name="Average Number of Terms Per Document" description="Average number of terms created per document" type="perf_large_raw_fraction" detailLevel="standard" aggregate="avg" baseID="122" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="117" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.AverageInteriorIndexTermsPerDocument" name="Average number Interior Index Terms Per Document" description="Average number of interior index terms created per document" type="perf_large_raw_fraction" detailLevel="standard" aggregate="avg" baseID="122" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="118" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.AverageLeafIndexTermsPerDocument" name="Average number Leaf Index Terms Per Document" description="Average number of leaf index terms created per document" type="perf_large_raw_fraction" detailLevel="standard" aggregate="avg" baseID="122" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="119" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.AverageRangeTermsPerDocument" name="Average number Range Terms Per Document" description="Average number of range terms created per document" type="perf_large_raw_fraction" detailLevel="standard" aggregate="avg" baseID="122" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="120" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.AverageHashTermsPerDocument" name="Average number Hash Terms Per Document" description="Average number of hash terms created per document" type="perf_large_raw_fraction" detailLevel="standard" aggregate="avg" baseID="122" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="121" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.AverageArrayTermsPerDocument" name="Average number Array Terms Per Document" description="Average number Array Terms created per document" type="perf_large_raw_fraction" detailLevel="standard" aggregate="avg" baseID="122" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="122" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.DocumentCounterPercentBase" name="Base Counter for All Per Document Counters" description="The base counter for all per document counters" type="perf_large_raw_base" detailLevel="standard" aggregate="avg" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="123" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.NumInteriorIndexTerms" name="Number of Interior Index Terms" description="number of interior index terms created" type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="124" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.NumLeafIndexTerms" name="Number of Leaf Index Terms" description="number of leaf index terms created" type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="125" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.NumRangeIndexTerms" name="Number of Range Index Terms" description="number of range index terms created" type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="126" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.NumHashIndexTerms" name="Number of Hash Index Terms" description="number of hash index terms created" type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="127" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.NumArrayIndexTerms" name="Number of Array Index Terms" description="number of array index terms created" type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="128" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.IsLazyCollection" name="Whether Lazy Indexing Collection Created" description="Whether collection created with lazy indexing mode" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="129" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.IsConsistentCollection" name="Whether Consistent Indexing Collection Created" description="Whether collection created with consistent indexing mode" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="130" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.NumIncludedPaths" name="Number of Included Indexed Paths Created" description="Number of included indexed paths" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="131" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.NumExcludedPaths" name="Number of Excluded Paths Created" description="Number of excluded paths created" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="132" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.IsNoneIndexCollection" name="Whether None Indexing Collection Created" description="Whether collection created with none indexing mode" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="133" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReIndexingBacklog" name="ReIndexer Backlog" description="Number of LSNs yet to be processed by ReIndexer." type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="134" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReIndexingRate" name="ReIndexing Rate(Terms/sec)" description="Number of ReIndexed terms per second." type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="135" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.TransportCPUPercentage" name="CPU Percentage of Transport" description="CPU Percentage Consumed by Transports" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="136" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ServiceFxCPUPercentage" name="CPU Percentage of ServiceFx" description="CPU Percentage Consumed by ServiceFx" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="137" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ScriptEngineHostCPUPercentage" name="CPU Percentage of ScriptEngineHost" description="CPU Percentage Consumed by ScriptEngineHost" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="138" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LocalStoreCPUPercentage" name="CPU Percentage of LocalStore" description="CPU Percentage Consumed by LocalStore" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="139" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.IndexManagerCPUPercentage" name="CPU Percentage of IndexManager" description="CPU Percentage Consumed by IndexManager" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="140" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeCPUPercentage" name="CPU Percentage of BwTree" description="CPU Percentage Consumed by BwTree" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="141" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BlobClientCPUPercentage" name="CPU Percentage of BlobClient" description="CPU Percentage Consumed by BlobClient" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="142" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.QueryEngineCPUPercentage" name="CPU Percentage of QueryEngine" description="CPU Percentage Consumed by QueryEngine" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="143" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.UnknownCPUPercentage" name="CPU Percentage of Unknown Component" description="CPU Percentage not attributed to any particular component" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="144" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.PerComponentCPUPercentageAvailable" name="CPU Percentage Per Component Is Available" description="Whether profiling was enabled during last profile interval." type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="145" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ConsumedThroughputLoad" name="Consumed Throughput Load" description="Last Load reported for the throughput consumed." type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="146" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SecondaryCopyOperationRate" name="Secondary Copy Operations/sec" description="Secondary copy operations completed per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="147" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SecondaryReplicationOperationRate" name="Secondary Replication Operations/sec" description="Secondary replication operations completed per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="148" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGcCPUPercentage" name="CPU Percentage of BwTree GC" description="CPU Percentage Consumed by BwTree GC" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="149" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BackupManagerCPUPercentage" name="CPU Percentage of BackupManager" description="CPU Percentage Consumed by Backup Manager" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="150" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReIndexerCPUPercentage" name="CPU Percentage of ReIndexer" description="CPU Percentage Consumed by ReIndexer" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="151" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.DatabaseDefragmentationCPUPercentage" name="CPU Percentage of DatabaseDefragmentation" description="CPU Percentage Consumed by DatabaseDefragmentation" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="152" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.TombstonePurgerCPUPercentage" name="CPU Percentage of TombstonePurger" description="CPU Percentage Consumed by TombstonePurger" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="153" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.IndexCompactionCPUPercentage" name="CPU Percentage of IndexCompaction" description="CPU Percentage Consumed by IndexCompaction" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="154" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.PurgerCPUPercentage" name="CPU Percentage of Purger" description="CPU Percentage Consumed by Purger" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="155" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LazyIndexingCPUPercentage" name="CPU Percentage of LazyIndexing" description="CPU Percentage Consumed by LazyIndexing" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="156" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicationTransportReceiver_CopyContext_BadputOperations" name="Replication Transport Receiver CopyContext Badput Operations/s" description="Replication transport receiver CopyContext badput operations per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="157" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicationTransportReceiver_CopyContext_BadputBytes" name="Replication Transport Receiver CopyContext Badput Bytes/s" description="Replication transport receiver CopyContext badput bytes per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="158" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.AverageSpatialTermsPerDocument" name="Average number Spatial Terms Per Document" description="Average number Spatial Terms created per document" type="perf_large_raw_fraction" detailLevel="standard" aggregate="avg" baseID="122" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="159" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.NumSpatialIndexTerms" name="Number of Spatial Index Terms" description="number of spatial index terms created" type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="160" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicationTransportReceiver_CopyContext_GoodputOperations" name="Replication Transport Receiver CopyContext Goodput Operations/s" description="Replication transport receiver CopyContext goodput operations per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="161" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicationTransportReceiver_CopyContext_GoodputBytes" name="Replication Transport Receiver CopyContext Goodput Bytes/s" description="Replication transport receiver CopyContext goodput bytes per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="162" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicationTransportReceiver_Copy_BadputOperations" name="Replication Transport Receiver Copy Badput Operations/s" description="Replication transport receiver Copy badput operations per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="163" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicationTransportReceiver_Copy_BadputBytes" name="Replication Transport Receiver Copy Badput Bytes/s" description="Replication transport receiver Copy badput bytes per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="164" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicationTransportReceiver_Copy_GoodputOperations" name="Replication Transport Receiver Copy Goodput Operations/s" description="Replication transport receiver Copy goodput operations per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="165" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicationTransportReceiver_Copy_GoodputBytes" name="Replication Transport Receiver Copy Goodput Bytes/s" description="Replication transport receiver Copy goodput bytes per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="166" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicationTransportReceiver_Replication_BadputOperations" name="Replication Transport Receiver Replication Badput Operations/s" description="Replication transport receiver Replication badput operations per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="167" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicationTransportReceiver_Replication_BadputBytes" name="Replication Transport Receiver Replication Badput Bytes/s" description="Replication transport receiver Replication badput bytes per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="168" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicationTransportReceiver_Replication_GoodputOperations" name="Replication Transport Receiver Replication Goodput Operations/s" description="Replication transport receiver Replication goodput operations per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="169" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicationTransportReceiver_Replication_GoodputBytes" name="Replication Transport Receiver Replication Goodput Bytes/s" description="Replication transport receiver Replication goodput bytes per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="170" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ExpiredResourcePurgerCPUPercentage" name="CPU Percentage of ExpiredResourcePurger" description="CPU Percentage Consumed by ExpiredResourcePurger" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="171" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ExpiredResourcePurgerBacklog" name="ExpiredResourcePurger Backlog" description="Number of expired documents yet to be processed by ExpiredResourcePurger." type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="172" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ExpiredResourcePurgerRate" name="ExpiredResourcePurger Rate(Resources/sec)" description="Number of expired resources purged by ExpiredResourcePurger per second." type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="173" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LatestCommittedSequenceNumber" name="Latest Committed Sequence Number" description="The latest sequence number that has been committed to store." type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="174" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LatestCommittedTimestamp" name="Latest Committed Timestamp" description="The latest timestamp that has been committed to store." type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="175" uri="Microsoft.WindowsAzure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ReplicatedStoreCPUPercentage" name="CPU Percentage of ReplicatedStore" description="CPU Percentage attributed to ReplicatedStore" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="176" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SchemaBuilderCPUPercentage" name="CPU Percentage of SchemaBuilder" description="CPU Percentage Consumed by SchemaBuilder" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="177" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ExpiredResourcePurger_FalsePositiveDocumentCount" name="ExpiredResourcePurger FalsePositive Document Count" description="Number of expired document ids returned from query that turn out to be false positive after validation." type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="178" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ExpiredResourcePurger_NotFoundDocumentCount" name="ExpiredResourcePurger NotFound Document Count" description="Number of expired document ids returned from query that could not be found in store." type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="179" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeCompactionWorkerCPUPercentage" name="CPU Percentage of BwTreeCompactionWorker" description="CPU Percentage Consumed by BwTreeCompactionWorker" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="180" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ExpiredResourcePurger_PurgeDuration" name="ExpiredResourcePurger Purge Duration" description="The duration in milliseconds was spent on purging the batch of expired documents." type="perf_counter_rawcount" aggregate="avg" detailLevel="standard" defaultScale="1" />
+          <counter id="181" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentIOPSConsumed" name="Esent IOPS Consumed" description="Esent IOPS Consumed." type="perf_large_raw_fraction" aggregate="avg" detailLevel="standard" baseID="245" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="182" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeIOPSConsumed" name="BwTree IOPS Consumed" description="BwTree IOPS Consumed." type="perf_large_raw_fraction" aggregate="avg" detailLevel="standard" baseID="245" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="183" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentDatabaseReadIOPSConsumed" name="Esent Database Read IOPS Consumed" description="Rate of database read operations completed." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="184" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentDatabaseWriteIOPSConsumed" name="Esent Database Write IOPS Consumed" description="Rate of database write operations completed." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="185" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentLogReadIOPSConsumed" name="Esent Log Read IOPS Consumed" description="Rate of log read operations completed." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="186" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentLogWriteIOPSConsumed" name="Esent Log Write IOPS Consumed" description="Rate of log write operations completed." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="187" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentDatabaseAverageReadLatencyInMilliseconds" name="Esent Database Average Read Latency In Milliseconds" description="Average length of time, in milliseconds, per database read operation." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="188" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentDatabaseAverageWriteLatencyInMilliseconds" name="Esent Database Average Write Latency In Millisecond" description="Average length of time, in milliseconds, per database write operation." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="189" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentLogAverageReadLatencyInMilliseconds" name="Esent Log Average Read Latency In Milliseconds" description="Average length of time, in milliseconds, per log read operation." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="190" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentLogAverageWriteLatencyInMilliseconds" name="Esent Log Average Write Latency In Milliseconds" description="Average length of time, in milliseconds, per log write operation." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="191" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentLogBufferWritesPerSecond" name="Esent Log Buffer Writes Per Second" description="Number of times the log buffers are written to the log file(s) per second." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="192" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentLogRecordStallsPerSecond" name="Esent Log Record Stalls Per Second" description="Number of log records that cannot be added to the log buffers per second because they are full." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="193" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentLogBytesWritePerSecond" name="Esent Log Bytes Write Per Second" description="Rate at which bytes are written to the log." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="194" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentLogBytesGeneratedPerSecond" name="Esent Log Bytes Generated Per Second" description="Rate at which data is added to the log. This is different from Log Bytes Write per second in that each byte is generated only once whereas each byte may be written many times." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="195" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.ServiceFxIOPSConsumed" name="ServiceFx IOPS Consumed" description="ServiceFx IOPS Consumed" type="perf_large_raw_fraction" aggregate="avg" detailLevel="standard" baseID="245" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="196" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.WaitForSequentialProgressDuration" name="WaitForSequentialProgress Duration" description="The duration in milliseconds was spent on waiting for sequential progress to catch up." type="perf_counter_rawcount" aggregate="avg" detailLevel="standard" defaultScale="1" />
+          <counter id="197" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.WaitForSequentialProgressRequests" name="WaitForSequentialProgress Requests/sec" description="The requests that need to wait for sequential progress to catch up per second." type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="198" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeBackgroundCompactionIOPerSecConsistent" name="BwTree Background Compaction IO Reads/sec (Consistent)" description="Number of flash read IOs Bw-tree background compaction performs per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="199" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeBackgroundCompactionIOPerSecLazy" name="BwTree Background Compaction IO Reads/sec (Lazy)" description="Number of flash read IOs Bw-tree background compaction performs per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="200" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeAbortedConsolidatesDueToSnapshotPerSecConsistent" name="BwTree Snapshot Aborted Consolidations/sec (Consistent)" description="Number of aborted Bw-tree page consolidations due to snapshot per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="201" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeAbortedConsolidatesDueToSnapshotPerSecLazy" name="BwTree Snapshot Aborted Consolidations/sec (Lazy)" description="Number of aborted Bw-tree page consolidations due to snapshot per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="202" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeConcurrentConsolidationsConsistent" name="BwTree Concurrent Page Consolidation Count (Consistent)" description="Number of Bw-tree concurrent page consolidations (Consistent)" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="203" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeConcurrentConsolidationsLazy" name="BwTree Concurrent Page Consolidation Count (Lazy)" description="Number of Bw-tree concurrent page consolidations (Lazy)" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="204" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.WaitForSequentialProgressTimeoutRequests" name="WaitForSequentialProgress Timeout Requests/sec" description="The requests that attempt to wait for sequential progress to catch up but are timed out per second." type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="205" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeConcurrentPageSplitsConsistent" name="BwTree Concurrent Page Split Count (Consistent)" description="Number of Bw-tree concurrent page splits (Consistent)" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="206" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeConcurrentPageSplitsLazy" name="BwTree Concurrent Page Split Count (Lazy)" description="Number of Bw-tree concurrent page splits (Lazy)" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="207" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeConcurrentPageDeletesConsistent" name="BwTree Concurrent Page Delete Count (Consistent)" description="Number of Bw-tree concurrent page deletes (Consistent)" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="208" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeConcurrentPageDeletesLazy" name="BwTree Concurrent Page Delete Count (Lazy)" description="Number of Bw-tree concurrent page deletes (Lazy)" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="209" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreePageDeletePostsPerSecConsistent" name="BwTree Page Delete Posts/sec (Consistent)" description="Number of successful Bw-tree page delete posts per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="210" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreePageDeletePostsPerSecLazy" name="BwTree Page Delete Posts/sec (Lazy)" description="Number of successful Bw-tree page delete posts per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="211" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFailedPageDeletePostsPerSecConsistent" name="BwTree Page Failed Delete Posts/sec (Consistent)" description="Number of failed Bw-tree page delete posts per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="212" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFailedPageDeletePostsPerSecLazy" name="BwTree Page Failed Delete Posts/sec (Lazy)" description="Number of failed Bw-tree page delete posts per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="213" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.PageBlobReadsPerSec" name="Page Blob Reads/sec" description="Page Blob Reads per second." type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="214" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.PageBlobReadBytesPerSec" name="Page Blob Read Bytes/sec" description="Page Blob Read Bytes per second." type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="215" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.PageBlobWritesPerSec" name="Page Blob Writes/sec" description="Page Blob Writes per second." type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="216" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.PageBlobWriteBytesPerSec" name="Page Blob Write Bytes/sec" description="Page Blob Write Bytes per second." type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="217" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BlockBlobReadsPerSec" name="Block Blob Reads/sec" description="Block Blob Reads per second." type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="218" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BlockBlobReadBytesPerSec" name="Block Blob Read Bytes/sec" description="Block Blob Read Bytes per second." type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="219" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BlockBlobWritesPerSec" name="Block Blob Writes/sec" description="Block Blob Writes per second." type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="220" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BlockBlobWriteBytesPerSec" name="Block Blob Write Bytes/sec" description="Block Blob Write Bytes per second." type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="221" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LogSegmentFlushQueueDepth" name="Log Segment Flush Queue Depth" description="Number of segments in the flush queue." type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="222" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LogSegmentCheckpointQueueDepth" name="Log Segment Checkpoint Queue Depth" description="Number of segments in the checkpoint queue." type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="223" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LogSegmentFlushesPerSec" name="Log Segment Flushes/sec" description="Log segment flushes per second." type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="224" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LogCheckpointFlushesPerSec" name="Segment Checkpoint Flushes/sec" description="Segment Checkpoint flushes per second." type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="225" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.GrowLogCheckpointFlushesPerSec" name="Grow Log Checkpoint Flushes/sec" description="Grow log checkpoint flushes per second." type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="226" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.SecondaryRootSegmentRefreshPerSec" name="Secondary RootSegment Refresh/sec" description="Secondary root segment refresh per second." type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="227" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.FabricClientCPUPercentage" name="CPU Percentage of FabricClient" description="CPU Percentage Consumed by FabricClient" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="228" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.FabricServiceManagementCPUPercentage" name="CPU Percentage of FabricServiceManagement" description="CPU Percentage Consumed by FabricServiceManagement" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="229" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.TopologyCPUPercentage" name="CPU Percentage of Topology" description="CPU Percentage Consumed by Topology" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="230" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LogStoreCPUPercentage" name="CPU Percentage of LogStore" description="CPU Percentage Consumed by LogStore" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="231" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeePagePersistentFragmentCountConsistent" name="BwTree Page Persistent Fragment Count (Consistent)" description="Number of Bw-tree page persistent fragment count (Consistent)" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="232" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeePagePersistentFragmentCountLazy" name="BwTree Page Persistent Fragment Count (Lazy)" description="Number of Bw-tree page persistent fragment count (Lazy)" type="perf_counter_rawcount" detailLevel="standard" defaultScale="1" />
+          <counter id="233" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGcConsolidationsPerSecConsistent" name="BwTree GC Page Consolidations/sec (Consistent)" description="Number of Bw-tree GC triggered page consolidations per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="234" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGcConsolidationsPerSecLazy" name="BwTree GC Page Consolidations/sec (Lazy)" description="Number of Bw-tree GC triggered page consolidations per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="235" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGcPageDeletesPerSecConsistent" name="BwTree GC Page Deletes/sec (Consistent)" description="Number of Bw-tree GC triggered page deletes per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="236" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGcPageDeletesPerSecLazy" name="BwTree GC Page Deletes/sec (Lazy)" description="Number of Bw-tree GC triggered page deletes per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1" />
+          <counter id="237" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.IndexRecoveryBacklog" name="Index Recovery Backlog" description="Number of LSNs yet to be processed by Index Recovery." type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="238" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.IndexRecoveryRate" name="Index Recovery Rate(Terms/sec)" description="Number of terms per second generated by Index Recovery." type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="239" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LogStoreIOPSConsumed" name="LogStore IOPS Consumed" description="LogStore IOPS Consumed." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="240" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LogStoreL0ReadsPerSec" name="LogStore L0 Reads/sec" description="Number of L0 Cache Reads Per Sec" type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="241" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LogStoreL1ReadsPerSec" name="LogStore L1 Reads/sec" description="Number of L1 Cache Reads Per Sec" type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="242" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LogStoreRemoteStoreReadsPerSec" name="LogStore Remote Store Reads/sec" description="Number of Remote Store Reads Per Sec" type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="243" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LogStoreWriteAheadLogReadsPerSec" name="LogStore WAL Reads/sec" description="Number of WAL Reads Per Sec" type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="244" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.LogStoreSegmentRelocationsPerSec" name="LogStore Garbage Collection Segment Relocations/sec" description="Number of Segment Relocations Per Sec" type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1" />
+          <counter id="245" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.PercentageConstantWithTypeLargeBase" name="Percentage Constant with type large base" description="This counter stores Constant Value for large base types but does not display" type="perf_large_raw_base" aggregate="avg" detailLevel="standard">
+            <counterAttributes>
+              <counterAttribute name="noDisplay" />
+            </counterAttributes>
+          </counter>
+          <counter id="246" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.EsentTableScan" name="CPU Percentage of Esent Table scan" description="CPU Percentage consumed by Esent Table scan." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="247" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGCNumberOfParallelRelocationsConsistent" name="BwTree GC Number Of Parallel Relocations (Consistent)" description="Number of parallel relocations in Bw Tree at any one point." type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="248" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGCNumberOfParallelRelocationsLazy" name="BwTree GC Number Of Parallel Relocations (Lazy)" description="Number of parallel relocations in Bw Tree at any one point." type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="249" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGCCPUThrottledTimesPerSecConsistent" name="BwTree GC Number Of Times CPU Throttled Per Sec (Consistent)" description="The number of times BwTree GC got throttled by CPU per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="250" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGCCPUThrottledTimesPerSecLazy" name="BwTree GC Number Of Times CPU Throttled Per Sec (Lazy)" description="The number of times BwTree GC got throttled by CPU per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="251" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGCIOThrottledTimesPerSecConsistent" name="BwTree GC Number Of Times IO Throttled Per Sec (Consistent)" description="The number of times BwTree GC got throttled by IO per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="252" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGCIOThrottledTimesPerSecLazy" name="BwTree GC Number Of Times IO Throttled Per Sec (Lazy)" description="The number of times BwTree GC got throttled by IO per second" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="253" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFreeSpaceInLogConsistent" name="BwTree Free Space in Log (Consistent)" description="Free space in log at any point." type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="254" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFreeSpaceInLogLazy" name="BwTree Free Space in Log (Lazy)" description="Free space in log at any point." type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="255" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFileOffsetConsistent" name="BwTree File Offset (Consistent)" description="File offset." type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="256" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeFileOffsetLazy" name="BwTree File Offset (Lazy)" description="File offset." type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="257" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeVolatileGCOffsetConsistent" name="BwTree Volatile GC Offset (Consistent)" description="Volatile GC Offset." type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="258" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeVolatileGCOffsetLazy" name="BwTree Volatile GC Offset (Lazy)" description="Volatile GC Offset." type="perf_counter_large_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="259" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGCReadIoPerSecConsistent" name="BwTree GC IO Reads/sec (Consistent)" description="Number of flash read IOs Bw-tree GC performs per second (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="260" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGCReadIoPerSecLazy" name="BwTree GC IO Reads/sec (Lazy)" description="Number of flash read IOs Bw-tree GC performs per second (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="261" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeLowPriorityGCCPUPercentage" name="CPU Percentage of BwTree Low Priority GC" description="CPU Percentage Consumed by Low Priority BwTree GC" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+          </counter>
+          <counter id="262" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.StoreCopy" name="CPU Percentage of Store Copy" description="CPU Percentage consumed by Store Copy." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="263" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGcPriorityConsistent" name="BwTree GC Priority (Consistent)" description="Current BwTree GC Priority (Consistent)" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="264" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGcPriorityLazy" name="BwTree GC Priority (Lazy)" description="Current BwTree GC Priority (Lazy)" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="265" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeActiveRSSPCheckpointsConsistent" name="BwTree Number of Active RSSP Checkpoints (Consistent)" description="Number of Active RSSP Checkpoints at any one point" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="266" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeActiveRSSPCheckpointsLazy" name="BwTree Number of Active RSSP Checkpoints (Lazy)" description="Number of Active RSSP Checkpoints at any one point" type="perf_counter_rawcount" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="267" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.MaxCPURateUtilization" name="Max CPURate Utilization" description="Max CPURate used by user requests" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="268" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeRSSPCheckpointNetSizeContributionConsistent" name="BwTree RSSP Checkpoint Net Size Contribution (Consistent)" description="Amount of size contributed by an RSSP checkpoint (Consistent)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="269" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeRSSPCheckpointNetSizeContributionLazy" name="BwTree RSSP Checkpoint Net Size Contribution (Lazy)" description="Amount of size contributed by an RSSP checkpoint (Lazy)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="270" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.OperationLogPurger" name="CPU Percentage of OperationLogPurger" description="CPU Percentage Consumed by OperationLogPurger" type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+          </counter>
+          <counter id="271" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeSparsePageMergeWithAveragePageUtilizationLowConsistent" name="BwTree Sparse Page Merge with Low Average Utilization (Consistent)" description="BwTree Sparse Page Merge due to low average utilization (Consistent)" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="272" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeSparsePageMergeWithAveragePageUtilizationLowLazy" name="BwTree Sparse Page Merge with Low Average Utilization (Lazy)" description="BwTree Sparse Page Merge due to low average utilization (Lazy)" type="perf_counter_counter" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="273" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.IndexRecovery" name="CPU Percentage of Index Recovery" description="CPU Percentage consumed by Index Recovery." type="perf_raw_fraction" aggregate="avg" detailLevel="standard" baseID="3" defaultScale="1">
+            <counterAttributes>
+              <counterAttribute name="displayAsReal" />
+            </counterAttributes>
+          </counter>
+          <counter id="274" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGcFreeSpaceLostPerSecondConsistent" name="BwTree GC Free Space Lost /sec (Consistent)" description="Free space in bytes lost by the GC per sec (Consistent)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="275" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaCounterSet.BwTreeGcFreeSpaceLostPerSecondLazy" name="BwTree GC Free Space Lost /sec (Lazy)" description="Free space in bytes lost by the GC per sec (Lazy)" type="perf_counter_large_rawcount" detailLevel="standard" defaultScale="1">
+          </counter>
+        </counterSet>
+        <counterSet guid="{be73c456-8045-4a17-9430-acf7ff8fd451}" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaSessionCounterSet" name="DocDB Master ReplicaSession Counters" description="DocDB Master Service ReplicaSession Performance Counters" symbol="MasterReplicaSessionCounterSet" instances="multipleAggregate">
+          <counter id="1" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaSessionCounterSet.WritePropagationDelayInMsec" name="Write Propagation Delay In Msec" description="Write Propagation Delay In Msec" type="perf_counter_rawcount" aggregate="avg" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="2" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaSessionCounterSet.CopySendBytes" name="Replication Transport Sender Copy Send Bytes/sec" description="Replication Transport Sender Copy Send Bytes/sec" type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="3" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaSessionCounterSet.ReplicationSendBytes" name="Replication Transport Sender Replication Send Bytes/sec" description="Replication Transport Sender Replication Send Bytes/sec" type="perf_counter_counter" aggregate="sum" detailLevel="standard" defaultScale="1">
+          </counter>
+          <counter id="4" uri="Microsoft.Azure.Documents.Backend.Master.PerformanceCounters.MasterReplicaSessionCounterSet.RTTInMsec" name="Round Trip Time In Msec" description="Round Trip Time In Msec" type="perf_counter_rawcount" aggregate="avg" detailLevel="standard" defaultScale="1">
+          </counter>
+        </counterSet>
+      </provider>
+    </counters>
+  </instrumentation>
+</instrumentationManifest>

@@ -1,0 +1,32 @@
+﻿<#@ template language="C#" debug="True" hostSpecific="True" #>
+<#@ output extension=".generated.cs"                        #>
+
+<#@ include file="$(LinqToDBT4PostgreSQLTemplatesPath)LinqToDB.PostgreSQL.Tools.ttinclude" once="true" #>
+<#@ include file="$(LinqToDBT4PostgreSQLTemplatesPath)PluralizationService.ttinclude"      once="true" #>
+<#
+	/* See more at https://linq2db.github.io/articles/T4.html */
+
+	NamespaceName = "VZ.Shared.Data";
+	DataContextName = "VzDataContext";
+	GenerateDataTypes = true;
+	GenerateDbTypes = true;
+
+	// to configure GetSchemaOptions properties, add them here, before load metadata call
+	GetSchemaOptions.LoadTable = (table) => 
+	{
+		return table.Name.Equals("business_products");
+	};
+	
+	LoadPostgreSQLMetadata("localhost", "5432", "vz-dev", "devuser", "Password2020!");
+
+	// to adjust loaded database model before generation, add your code here, after load metadata, but before GenerateModel() call
+	Model.Usings.Add("System.Collections.Generic");
+	
+	GetColumn("business_products", "external_product_ids").Type = "List<string>";
+	GetColumn("business_products", "image").Type = "ProductImage";
+	GetColumn("business_products", "models").Type = "List<ProductModel>";
+	GetColumn("business_products", "model_direction").Type = "ModelDirection";
+	GetColumn("business_products", "unit").Type = "SizeUnit";
+
+	GenerateModel();
+#>

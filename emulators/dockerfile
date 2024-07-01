@@ -1,0 +1,16 @@
+FROM microsoft/windowsservercore
+#FROM mcr.microsoft.com/dotnet/framework/runtime:4.7.2
+
+#WORKDIR D:/work/truerevue/code/TrueRevueAPI/emulators/docker
+
+COPY ./cosmosdb /emulators/cosmosdb
+EXPOSE 8081/tcp
+
+COPY ./eventgrid /emulators/eventgrid
+EXPOSE 5000/tcp
+
+WORKDIR /emulators/cosmosdb
+CMD ["CosmosDB.Emulator.exe"]
+
+#WORKDIR /emulators/eventgrid
+#CMD ["EventGridEmulator.exe"]

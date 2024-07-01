@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "VZ.Public.Api": {
+      "commandName": "Project",
+      "commandLineArgs": "start -port 7061 --verbose --useHttps --cert \"../../../../../cert/certificate.pfx\" --password \"localhost\""
+    }
+  }
+}

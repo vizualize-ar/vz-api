@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TrueRevue.WorkerApi": {
+      "commandName": "Project",
+      "commandLineArgs": "start -port 8002 --verbose --useHttps --cert \"../../../../cert/certificate.pfx\" --password \"localhost\""
+    }
+  }
+}

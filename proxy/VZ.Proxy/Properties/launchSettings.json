@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TrueRevue.Proxy": {
+      "commandName": "Project",
+      "commandLineArgs": "start -port 7000 --verbose --useHttps --cert \"../../../../../cert/certificate.pfx\" --password \"localhost\""
+    }
+  }
+}

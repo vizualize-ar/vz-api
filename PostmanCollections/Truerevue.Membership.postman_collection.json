@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "9715e982-fd55-4d7f-bf30-d09fb22dd3e6",
+		"name": "Truerevue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/membership/user/a585591c-a24a-43b0-8aa4-c96a25d7f153",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"membership",
+						"user",
+						"a585591c-a24a-43b0-8aa4-c96a25d7f153"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"FirstName\":\"Usama\"\r\n,\"LastName\":\"haz\"\r\n, \"Email\":\"usamaazhar@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/membership/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"membership",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Addbusiness",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Name\":\"ClassicShoes1\"\r\n,\"WebsiteUrl\":\"http://classicshoes.com1\"}"
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/membership/business",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"membership",
+						"business"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/membership/user/3ed504b3-e90c-4194-a9f7-1ab87ab4924d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"membership",
+						"user",
+						"3ed504b3-e90c-4194-a9f7-1ab87ab4924d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBusiness",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/membership/business/b2a395a8-97ad-406e-96a3-39512bb7ca0c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"membership",
+						"business",
+						"b2a395a8-97ad-406e-96a3-39512bb7ca0c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBusiness",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/membership/business/995b5665-4f6b-45ca-aedf-dea768bbc78b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"membership",
+						"business",
+						"995b5665-4f6b-45ca-aedf-dea768bbc78b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBusiness",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Name\":\"ClassicShoes2\"\r\n,\"WebsiteUrl\":\"http://classicshoes.com2\",\r\n\"Id\": \"b2a395a8-97ad-406e-96a3-39512bb7ca01\",\r\n\"ApiVersion\" : \"1.0\",\r\n\"ApiToken\" : \"b2a395a8-97ad-406e-96a3-39512bb7ca02\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/membership/business/b2a395a8-97ad-406e-96a3-39512bb7ca01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"membership",
+						"business",
+						"b2a395a8-97ad-406e-96a3-39512bb7ca01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Id\":\"3ed504b3-e90c-4194-a9f7-1ab87ab49242\",\r\n \"FirstName\":\"Usama Azhar\"\r\n,\"LastName\":\"Kayani\"\r\n, \"Email\":\"usamaazhar32@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/membership/user/3ed504b3-e90c-4194-a9f7-1ab87ab49242",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"membership",
+						"user",
+						"3ed504b3-e90c-4194-a9f7-1ab87ab49242"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

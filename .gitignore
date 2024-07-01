@@ -1,0 +1,10 @@
+bin
+obj
+*.suo
+*.user
+*.vs
+/membership/shared
+emulators/CosmosDB/Packages/DataExplorer/*
+app_settings.prod.json
+app_settings.qa.json
+app_settings.tr.prod.json

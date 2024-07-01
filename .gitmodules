@@ -1,0 +1,18 @@
+[submodule "reviews"]
+	path = reviews
+	url = https://truerevue@dev.azure.com/truerevue/TrueRevueApi/_git/TrueRevueApi.ReviewsMicroservice
+	ignore = dirty
+[submodule "shared"]
+
+	path = shared
+
+	url = https://truerevue@dev.azure.com/truerevue/TrueRevueApi/_git/TrueRevueApi.Shared
+[submodule "membership"]
+	path = membership
+	url = https://dev.azure.com/truerevue/TrueRevueApi/_git/membership-service
+[submodule "blockchain-api"]
+	path = blockchain-api
+	url = https://truerevue@dev.azure.com/truerevue/TrueRevueApi/_git/blockchain-api
+[submodule "orders"]
+	path = orders
+	url = https://truerevue@dev.azure.com/truerevue/TrueRevueApi/_git/orders-service

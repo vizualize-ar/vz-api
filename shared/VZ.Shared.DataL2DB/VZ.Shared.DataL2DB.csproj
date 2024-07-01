@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="linq2db.PostgreSQL" Version="3.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="VzModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>VzModel.generated.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="VzModel.generated.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>VzModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

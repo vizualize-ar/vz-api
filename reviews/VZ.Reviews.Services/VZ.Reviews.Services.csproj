@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dawn.Guard" Version="1.8.0" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB" Version="2.2.3" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\shared\VZ.Shared.Storage\VZ.Shared.Storage.csproj" />
+    <ProjectReference Include="..\..\shared\VZ.Shared\VZ.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
